@@ -1,0 +1,29 @@
+﻿body {
+    font-family: "Host Grotesk", sans-serif;
+    background: #f8f9fa;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    border-radius: 0.5rem;
+}
+
+.btn-login {
+    background-color: #438875;
+}

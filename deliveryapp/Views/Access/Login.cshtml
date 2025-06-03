@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="col-md-4">
+            <div class="login-card bg-white p-4">
+                <h3 class="text-center mb-4">Iniciar Sesión</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="••••••••">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Recuerdame</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    Aún no tienes cuenta? <a asp-controller="Access" asp-action="Register">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

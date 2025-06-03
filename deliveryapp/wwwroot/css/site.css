@@ -1,0 +1,95 @@
+
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+    
+}
+    .hero > div {
+        position: relative;
+        width: 90vw;
+        margin: auto;
+       
+        display: flex;
+        justify-content: space-around;
+    }
+.hero__image img {
+    width: 750px;
+}
+.hero__slogan h2{
+    font-size: 108px;
+    width: 600px;
+}
+
+.hero__slogan h2 > span {
+    color: #CF560B
+}
+
+.navbar{
+    margin: 0px 20px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.navbar-wrapper ul {
+    width: 500px;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero__stats{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px
+}
+
+    .hero__stats .stats-item {
+        border: 3px solid #CF560B;
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 260px;
+        color: #CF560B;
+    }
+
+.stats-item--cian {
+    color: #438875 !important;
+}
+
+.hero__stats .stats-item div {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.hero__stats .stats-item div.sized {
+    font-size: 50px;
+}
+
+.nav-item--login svg{
+    width: 25px;
+    height: 25px;
+}
+
+
+

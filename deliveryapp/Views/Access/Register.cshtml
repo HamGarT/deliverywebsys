@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="register-container">
+        <div class="col-md-5">
+            <div class="register-card bg-white p-4">
+                <h3 class="text-center mb-4">Crear cuenta</h3>
+                <form  asp-controller="Access" asp-action="Register" method="post">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Nombres y Apellidos</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Pedro Peréz" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="••••••••" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirmación de contraseña</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="••••••••" />
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-register">Registrar</button>
+                    </div>
+                </form>
+                <div class="text-center mt-3">
+                    Ya tienes una cuenta? <a asp-controller="Access" asp-action="Login">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
