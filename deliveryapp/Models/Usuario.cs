@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace deliveryapp.Models
 {
-    public class User
+    public class Usuario
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -14,9 +14,12 @@ namespace deliveryapp.Models
         [Required]
         [StringLength(50)]
         public string LastNames { get; set; }
+        [Required]
         [StringLength(100)]
         [EmailAddress]
         public string Email { get; set; }
+
+        public string Password { get; set; }
         public DateTime CreatedAt { get; set; }
         public int IdRole { get; set; }
         [ForeignKey("IdRole")]

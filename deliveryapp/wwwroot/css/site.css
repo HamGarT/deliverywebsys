@@ -16,7 +16,7 @@ body {
 
 .hero {
     width: 100vw;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
     
 }
@@ -44,11 +44,17 @@ body {
     margin: 0px 20px;
     font-size: 20px;
     align-items: center;
+    background-color: transparent;
 }
 
 .navbar-wrapper ul {
     width: 500px;
+    
 }
+.navbar-wrapper ul li  {
+    color: white;
+}
+
 
 .navbar-wrapper {
     width: 100%;
@@ -89,6 +95,19 @@ body {
 .nav-item--login svg{
     width: 25px;
     height: 25px;
+}
+
+.wave{
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+    z-index: -999;
+}
+
+.wave img{
+    height: 100%;
+    width: 100%;
 }
 
 

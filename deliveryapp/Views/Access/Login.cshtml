@@ -1,9 +1,9 @@
 ﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
     Layout = null;
 }
+@model deliveryapp.ViewModels.LoginVM;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +22,14 @@
         <div class="col-md-4">
             <div class="login-card bg-white p-4">
                 <h3 class="text-center mb-4">Iniciar Sesión</h3>
-                <form>
+                <form asp-controller="Access" asp-action="Login" method="post">
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electronico</label>
-                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"  asp-for="Email">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="••••••••">
+                        <input type="password" class="form-control" id="password" placeholder="••••••••" asp-for="Password">
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="remember">
@@ -39,6 +39,12 @@
                         <button type="submit" class="btn btn-login">Login</button>
                     </div>
                 </form>
+                @if (ViewData["Mensaje"] != null)
+                {
+                    <div class="alert alert-danger" role="alert">
+                        @ViewData["Mensaje"]
+                    </div>
+                }
                 <div class="text-center mt-3">
                     Aún no tienes cuenta? <a asp-controller="Access" asp-action="Register">Registrarse</a>
                 </div>

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\deliveryapp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
       "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
@@ -27,6 +31,14 @@
     {
       "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\images\\delivery3dcropped.png",
       "PackagePath": "staticwebassets\\images\\delivery3dcropped.png"
+    },
+    {
+      "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\images\\wave.png",
+      "PackagePath": "staticwebassets\\images\\wave.png"
+    },
+    {
+      "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\js\\adminsidebar.js",
+      "PackagePath": "staticwebassets\\js\\adminsidebar.js"
     },
     {
       "Id": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\js\\site.js",
