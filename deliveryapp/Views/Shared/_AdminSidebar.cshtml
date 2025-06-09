@@ -6,6 +6,8 @@
     <title></title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/customgrids.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/forms.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -27,7 +29,7 @@
 
         <div class="nav-menu">
             <div class="nav-item">
-                <a href="#" class="nav-link active">
+                <a class="nav-link" asp-controller="Dashboard" asp-action="Index">
                     <i class="fas fa-home"></i>
                     <span>Dashboard</span>
                 </a>
@@ -40,9 +42,14 @@
             </div>
             <div class="nav-item">
                 <a href="#" class="nav-link" style="position: relative;">
-                    <i class="fas fa-envelope"></i>
-                    <span>Prdouctos</span>
-                    <div class="badge-notification">3</div>
+                    <i class="fa-solid fa-burger"></i>
+                    <span>Productos</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" style="position: relative;" asp-controller="RestaurantManagement" asp-action="Index">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>Restaurantes</span>
                 </a>
             </div>
             <div class="nav-item">
@@ -67,7 +74,7 @@
     </main>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/adminsidebar.js"></script>
+    <script src="~/js/adminsidebar.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

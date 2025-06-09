@@ -7,6 +7,9 @@ namespace deliveryapp.Data
     {
         public DbSet<Usuario> Users { get; set; } 
         public  DbSet<Roles> Roles { get; set; }
+        public DbSet<Product> Products  { get; set; }
+
+        public DbSet<Restaurant> Restaurants { get; set; }
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { 
         }
 

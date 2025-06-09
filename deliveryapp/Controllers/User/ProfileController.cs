@@ -10,4 +10,6 @@ namespace deliveryapp.Controllers.User
             return View("~/Views/User/Profile/Index.cshtml");
         }
     }
+
+    
 }

@@ -12,7 +12,7 @@ using deliveryapp.Data;
 namespace deliveryapp.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250604214249_m1")]
+    [Migration("20250609071518_m1")]
     partial class m1
     {
         /// <inheritdoc />
@@ -24,6 +24,73 @@ namespace deliveryapp.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("deliveryapp.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IdRestaurant")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdRestaurant");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Restaurant", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Restaurants");
+                });
 
             modelBuilder.Entity("deliveryapp.Models.Roles", b =>
                 {
@@ -100,6 +167,17 @@ namespace deliveryapp.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("deliveryapp.Models.Product", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Restaurant", "restaurant")
+                        .WithMany("Products")
+                        .HasForeignKey("IdRestaurant")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("restaurant");
+                });
+
             modelBuilder.Entity("deliveryapp.Models.Usuario", b =>
                 {
                     b.HasOne("deliveryapp.Models.Roles", "Rol")
@@ -109,6 +187,11 @@ namespace deliveryapp.Migrations
                         .IsRequired();
 
                     b.Navigation("Rol");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Restaurant", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

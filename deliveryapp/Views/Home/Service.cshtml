@@ -1,0 +1,70 @@
+﻿@{
+}
+@model List<deliveryapp.Models.Restaurant>
+<section class="restaurants mt-4">
+    
+    <div class="c-browser position-relative container">
+        <div class="position-absolute end-0 d-flex">
+            <input type="text" class="form-control mb-3" placeholder="Buscar restaurante" />
+            <button class="btn btn-primary w-100">Buscar</button>
+        </div>
+    </div>
+    <div class="list-and-browser-container d-flex">
+        <div class="filter-panel">
+        </div>
+        <div class="restaurants-list container">
+            <a class="restaurant-list-item mb-4" href="www.google.com">
+                <div class="restaurant-image">
+                    <img src="~/images/restaurants/rappi-logopj-peya.jpg" alt="Imagen del restaurante" />
+                </div>
+                <div class="restaurant-info-container ms-3">
+                    <div class="restaurant-basics py-2">
+                        <h4 class="restaurant-name fs-5">Nombre Restaurante</h4>
+                        <span class="restaurant-location d-block text-secondary">Ubicacion restaurante</span>
+                        <span class="restaurant-delivery-price text-secondary">precio delivery</span>
+                    </div>
+                    <div class="restaurant-rating">
+                    </div>
+                </div>
+
+            </a>
+
+            <a class="restaurant-list-item mb-4" href="google.com">
+                <div class="restaurant-image">
+                    <img src="~/images/restaurants/rappi-logopj-peya.jpg" alt="Imagen del restaurante" />
+                </div>
+                <div class="restaurant-info-container ms-3">
+                    <div class="restaurant-basics py-2">
+                        <h4 class="restaurant-name fs-5">Nombre Restaurante</h4>
+                        <span class="restaurant-location d-block text-secondary">Ubicacion restaurante</span>
+                        <span class="restaurant-delivery-price text-secondary">precio delivery</span>
+                    </div>
+                    <div class="restaurant-rating">
+                    </div>
+                </div>
+
+            </a>
+
+            @foreach (var item in Model)
+            {
+                <a class="restaurant-list-item mb-4" href="google.com">
+                    <div class="restaurant-image">
+                        <img src="@item.ImageUrl" alt="Imagen del restaurante" />
+                    </div>
+                    <div class="restaurant-info-container ms-3">
+                        <div class="restaurant-basics py-2">
+                            <h4 class="restaurant-name fs-5">@item.Name</h4>
+                            <span class="restaurant-location d-block text-secondary">@item.Address</span>
+                            <span class="restaurant-delivery-price text-secondary">precio delivery</span>
+                        </div>
+                        <div class="restaurant-rating">
+                        </div>
+                    </div>
+
+                </a>
+            }
+
+        </div>
+    </div>
+   
+</section>

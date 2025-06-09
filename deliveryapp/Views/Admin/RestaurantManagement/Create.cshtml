@@ -1,0 +1,92 @@
+﻿@model deliveryapp.ViewModels.RestaurantVM
+
+<div id="createRestaurantForm" class="container">
+    <div class="form-container">
+        <div class="form-header">
+            <h2 class="text-center">Restaurante</h2>
+            <p class="text-muted text-center">Llenar todos los detalles</p>
+        </div>
+
+        <form id="modernForm" asp-controller="RestaurantManagement" asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresar nombre de restaurante" required asp-for="Name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Ingresar descripción" asp-for="Description"></textarea>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="address" class="form-label">Dirección</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <input type="text" class="form-control" id="address" placeholder="Ingresar dirección completa" asp-for="Address">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Numero de teléfono</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Ingresar numero de teléfono" asp-for="PhoneNumber">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="Dirección de correo electrónico" required asp-for="Email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="imageUpload" class="form-label">Imagen</label>
+                    <div class="mt-2">
+                        <span class="text-muted small">Upload an image:</span>
+                        <input class="form-control" type="file" id="imageUpload" accept=".jpg,.jpeg,.png,.gif,.webp" asp-for="ImageUpload">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @* <script>
+        $('#createRestaurantForm').submit(function (e) {
+            e.preventDefault();
+            const formData = $(this).serialize();
+            $.post('@Url.Action("Create", "RestaurantManagement")', formData, function (response) {
+                alert("Restaurante creado correctamente.");
+                $('#overlay, #formModal').fadeOut();
+            }).fail(function () {
+                alert("Error al crear restaurante.");
+            });
+        });
+    </script> *@
+}

@@ -19,6 +19,7 @@ builder.Services.AddAuthentication("CookieAuth")
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy => policy.RequireRole("admin"));
+    options.AddPolicy("User", policy => policy.RequireRole("user"));
 });
 
 var app = builder.Build();

@@ -4,6 +4,7 @@ using deliveryapp.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using System.Security.Claims;
 
 namespace deliveryapp.Controllers
@@ -15,6 +16,13 @@ namespace deliveryapp.Controllers
         {
             _context = appDBContext;
         }
+
+        public IActionResult AccessDenied()
+        {
+
+            return View();
+        }
+
         [HttpGet]
         public IActionResult Login()
         {
@@ -57,6 +65,7 @@ namespace deliveryapp.Controllers
                 ViewData["Mensaje"] = "Usuario no encontrado. Email: " + loginVM.Email + " / Password: " + loginVM.Password;
                 return View();
             }
+
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.Names),
@@ -67,7 +76,15 @@ namespace deliveryapp.Controllers
             var indentity = new ClaimsIdentity(claims, "CookieAuth");
             var principal = new ClaimsPrincipal(indentity);
             await HttpContext.SignInAsync("CookieAuth", principal);
+            if(user.Rol.name == "Admin")
+            {
+                return RedirectToAction("Index", "Dashboard");
+            }
             return RedirectToAction("Index", "Profile");
         }
+
+      
+
+
     }
 }
