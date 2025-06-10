@@ -15,8 +15,10 @@ namespace deliveryapp.Models
         [Precision(18, 2)]
         public decimal Price { get; set; }
 
+        public string ImageUrl { get; set; }
+
         public int IdRestaurant { get; set; }
         [ForeignKey("IdRestaurant")]
-        public Restaurant restaurant { get; set; }
+        public Restaurant Restaurant { get; set; }
     }
 }

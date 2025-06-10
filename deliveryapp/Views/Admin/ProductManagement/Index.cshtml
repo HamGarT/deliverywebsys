@@ -1,9 +1,9 @@
 ﻿@{
     Layout = "~/Views/Shared/_AdminSidebar.cshtml";
 }
-@model List<deliveryapp.Models.Restaurant>
+@model List<deliveryapp.Models.Product>
 <div>
-    <h2>Restaurant</h2>
+    <h2>Productos</h2>
     <button id="btnCreate">Crear</button>
     <button id="btnEdit">Editar</button>
     <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
@@ -18,16 +18,16 @@
             <div class="grid-header">
                 <div class="grid-cell">Nombre</div>
                 <div class="grid-cell">Imagen</div>
-                <div class="grid-cell">Email</div>
-                <div class="grid-cell">Teléfono</div>
+                <div class="grid-cell">Precio</div>
+                <div class="grid-cell">Restaurant</div>
                 <div class="grid-cell">Editar</div>
                 <div class="grid-cell">Eliminar</div>
             </div>
             <div class="grid-row">
-                <div class="grid-cell">TestRestaurant</div>
+                <div class="grid-cell">TestProduct</div>
                 <div class="grid-cell"><img src="" alt="" srcset=""></div>
-                <div class="grid-cell">test@gmail.com</div>
-                <div class="grid-cell">98345678</div>
+                <div class="grid-cell">S/.12</div>
+                <div class="grid-cell">Restaurant1</div>
                 <div class="grid-cell"><button class="btn-primary">🛠</button></div>
                 <div class="grid-cell"><button class="btn-danger">🗑️</button></div>
             </div>
@@ -37,13 +37,13 @@
                 <div class="grid-row">
                     <div class="grid-cell">@item.Name</div>
                     <div class="grid-cell"><img src="@item.ImageUrl" alt="" srcset=""></div>
-                    <div class="grid-cell">@item.Email</div>
-                    <div class="grid-cell">@item.PhoneNumber</div>
+                    <div class="grid-cell">@item.Price</div>
+                    <div class="grid-cell">@item.Restaurant.Name</div>
                     <div class="grid-cell"><button class="btn-primary">🛠</button></div>
                     <div class="grid-cell"><button class="btn-danger">🗑️</button></div>
                 </div>
             }
-            
+
         </div>
     </div>
 </div>
@@ -52,14 +52,14 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script>
         $('#btnCreate').click(function () {
-            $.get('@Url.Action("Create", "RestaurantManagement")', function (data) {
+            $.get('@Url.Action("Create", "ProductManagement")', function (data) {
                 $('#formContent').html(data);
                 $('#overlay, #formModal').fadeIn();
             });
         });
 
         $('#btnEdit').click(function () {
-            $.get('@Url.Action("Edit", "RestaurantManagement")', function (data) {
+            $.get('@Url.Action("Edit", "ProductManagement")', function (data) {
                 $('#formContent').html(data);
                 $('#overlay, #formModal').fadeIn();
             });

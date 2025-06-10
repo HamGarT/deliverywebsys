@@ -1,0 +1,72 @@
+﻿@model deliveryapp.ViewModels.ProductCreationVM
+
+<div id="createProductForm" class="container">
+    <div class="form-container">
+        <div class="form-header">
+            <h2 class="text-center">Productos</h2>
+            <p class="text-muted text-center">Llenar todos los detalles</p>
+        </div>
+
+        <form id="modernForm" asp-controller="ProductManagement" asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Nombre</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresar nombre de restaurante" required asp-for="Product.Name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Ingresar descripción" asp-for="Product.Description"></textarea>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="address" class="form-label">Precio</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                        <input type="number"  step="0.10" min="0" class="form-control" id="address" placeholder="Ingresar dirección completa" asp-for="Product.Price">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="SelectedRestaurantId" class="form-label">Restaurant</label>
+                    <select class="form-select" id="SelectedRestaurantId" asp-for="SelectedRestaurantId">
+                        <option value="" selected disabled>Seleccionar restaurante</option>
+                        @foreach (var item in Model.Restaurants)
+                        {
+                            
+                            <option class="form-control" value="@item.Id">@item.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="imageUpload" class="form-label">Imagen</label>
+                    <div class="mt-2">
+                        <span class="text-muted small">Upload an image:</span>
+                        <input class="form-control" type="file" id="imageUpload" accept=".jpg,.jpeg,.png,.gif,.webp" asp-for="ImageUpload">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

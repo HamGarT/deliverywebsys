@@ -1,10 +1,14 @@
-﻿@model List<Product>
+﻿@model List<deliveryapp.Models.Product>
 @{
 }
 <h2>Menu</h2>
 <ul>
     @foreach (var food in Model)
     {
-        <li>@food.Name - $@food.Price</li>
+        <div class="">
+            <h3>@food.Name</h3>
+            <p>@food.Description</p>
+            <span>@food.Price</span>
+        </div>
     }
 </ul>

@@ -1,0 +1,131 @@
+# Estructura de Proyecto ASP.NET Core - Sistema de Delivery
+
+## Estructura de Carpetas Principal
+
+```
+DeliverySystem/
+├── Controllers/
+│   ├── HomeController.cs
+│   ├── AccountController.cs
+│   ├── User/
+│   │   ├── OrderController.cs
+│   │   ├── RestaurantController.cs
+│   │   └── ProfileController.cs
+│   └── Admin/
+│       ├── DashboardController.cs
+│       ├── RestaurantManagementController.cs
+│       ├── OrderManagementController.cs
+│       ├── UserManagementController.cs
+│       └── ReportsController.cs
+├── Views/
+│   ├── Shared/
+│   │   ├── _Layout.cshtml
+│   │   ├── _AdminLayout.cshtml
+│   │   ├── _UserLayout.cshtml
+│   │   ├── _LoginPartial.cshtml
+│   │   └── Error.cshtml
+│   ├── Home/
+│   │   └── Index.cshtml
+│   ├── Account/
+│   │   ├── Login.cshtml
+│   │   ├── Register.cshtml
+│   │   └── Logout.cshtml
+│   ├── User/
+│   │   ├── Order/
+│   │   │   ├── Index.cshtml
+│   │   │   ├── Create.cshtml
+│   │   │   ├── Details.cshtml
+│   │   │   └── History.cshtml
+│   │   ├── Restaurant/
+│   │   │   ├── Index.cshtml
+│   │   │   ├── Details.cshtml
+│   │   │   └── Menu.cshtml
+│   │   └── Profile/
+│   │       ├── Index.cshtml
+│   │       └── Edit.cshtml
+│   └── Admin/
+│       ├── Dashboard/
+│       │   └── Index.cshtml
+│       ├── RestaurantManagement/
+│       │   ├── Index.cshtml
+│       │   ├── Create.cshtml
+│       │   ├── Edit.cshtml
+│       │   └── Details.cshtml
+│       ├── OrderManagement/
+│       │   ├── Index.cshtml
+│       │   ├── Details.cshtml
+│       │   └── UpdateStatus.cshtml
+│       ├── UserManagement/
+│       │   ├── Index.cshtml
+│       │   ├── Details.cshtml
+│       │   └── Edit.cshtml
+│       └── Reports/
+│           ├── Sales.cshtml
+│           ├── Orders.cshtml
+│           └── Users.cshtml
+├── Models/
+│   ├── Entities/
+│   │   ├── User.cs
+│   │   ├── Restaurant.cs
+│   │   ├── Order.cs
+│   │   ├── OrderItem.cs
+│   │   ├── Product.cs
+│   │   └── Category.cs
+│   ├── ViewModels/
+│   │   ├── User/
+│   │   │   ├── OrderViewModel.cs
+│   │   │   ├── RestaurantViewModel.cs
+│   │   │   └── ProfileViewModel.cs
+│   │   └── Admin/
+│   │       ├── DashboardViewModel.cs
+│   │       ├── RestaurantManagementViewModel.cs
+│   │       ├── OrderManagementViewModel.cs
+│   │       └── ReportsViewModel.cs
+│   └── DTOs/
+│       ├── OrderDto.cs
+│       ├── RestaurantDto.cs
+│       └── UserDto.cs
+├── Data/
+│   ├── ApplicationDbContext.cs
+│   ├── Migrations/
+│   └── Configurations/
+│       ├── UserConfiguration.cs
+│       ├── RestaurantConfiguration.cs
+│       └── OrderConfiguration.cs
+├── Services/
+│   ├── Interfaces/
+│   │   ├── IUserService.cs
+│   │   ├── IRestaurantService.cs
+│   │   ├── IOrderService.cs
+│   │   └── IEmailService.cs
+│   └── Implementations/
+│       ├── UserService.cs
+│       ├── RestaurantService.cs
+│       ├── OrderService.cs
+│       └── EmailService.cs
+├── Areas/
+│   └── Admin/
+│       ├── Controllers/
+│       ├── Views/
+│       └── Models/
+├── wwwroot/
+│   ├── css/
+│   │   ├── site.css
+│   │   ├── admin.css
+│   │   └── user.css
+│   ├── js/
+│   │   ├── site.js
+│   │   ├── admin.js
+│   │   └── user.js
+│   └── images/
+├── Helpers/
+│   ├── AuthorizationHelper.cs
+│   ├── EmailHelper.cs
+│   └── FileHelper.cs
+├── Middleware/
+│   ├── AuthenticationMiddleware.cs
+│   └── ExceptionHandlingMiddleware.cs
+├── appsettings.json
+├── appsettings.Development.json
+├── Program.cs
+└── Startup.cs (si usas .NET 5 o anterior)

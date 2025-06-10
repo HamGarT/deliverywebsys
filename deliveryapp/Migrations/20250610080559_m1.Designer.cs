@@ -12,7 +12,7 @@ using deliveryapp.Data;
 namespace deliveryapp.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250609071518_m1")]
+    [Migration("20250610080559_m1")]
     partial class m1
     {
         /// <inheritdoc />
@@ -39,6 +39,10 @@ namespace deliveryapp.Migrations
 
                     b.Property<int>("IdRestaurant")
                         .HasColumnType("int");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -169,13 +173,13 @@ namespace deliveryapp.Migrations
 
             modelBuilder.Entity("deliveryapp.Models.Product", b =>
                 {
-                    b.HasOne("deliveryapp.Models.Restaurant", "restaurant")
+                    b.HasOne("deliveryapp.Models.Restaurant", "Restaurant")
                         .WithMany("Products")
                         .HasForeignKey("IdRestaurant")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("restaurant");
+                    b.Navigation("Restaurant");
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Usuario", b =>

@@ -29,9 +29,9 @@ namespace deliveryapp.Controllers
             return View(restaurants);
         }
 
-        public IActionResult Menu(int id)
+        public async  Task<IActionResult> Menu(int idRestaurant)
         {
-            var foods = _context.Products.Where(p => p.IdRestaurant == id).FirstOrDefaultAsync();
+            var foods = await _context.Products.Where(p => p.IdRestaurant == idRestaurant).ToListAsync();
             return View(foods);
         }
 
