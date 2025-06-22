@@ -3,7 +3,7 @@
 :root {
     --sidebar-width: 280px;
     --sidebar-collapsed-width: 80px;
-    --primary-gradient: rgba(20,22,24,255);
+    --primary-gradient: #151718;
     --hover-bg: rgba(255, 255, 255, 0.1);
     --text-muted: rgba(255, 255, 255, 0.7);
 }

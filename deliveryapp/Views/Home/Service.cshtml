@@ -47,7 +47,7 @@
 
             @foreach (var item in Model)
             {
-                <a class="restaurant-list-item mb-4" asp-controller="Home" asp-action="Menu" asp-route-idRestaurant="@item.Id">
+                <a class="restaurant-list-item mb-4" asp-controller="Home" asp-action="Menu" asp-route-restaurant_id="@item.Id">
                     <div class="restaurant-image">
                         <img src="@item.ImageUrl" alt="Imagen del restaurante" />
                     </div>

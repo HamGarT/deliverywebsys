@@ -146,7 +146,7 @@ body {
 
 .restaurant-list-item:hover {
     border: 2px solid #d6844e86;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1.3px 2.6px 2.6px hsla(0, 0%, 43%, 0.315);
     transform: translateY(-3px);
     transition: all 0.3s ease;
 
@@ -163,4 +163,44 @@ body {
     height: 100px;
     border-radius: 20px;
 
+}
+
+.restaurant-banner {
+    width: 100vw;
+    height: 250px;
+    background-image: url("../images/bannerr4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.restaurant-banner h2 {
+    position: absolute;
+    font-size: 60px;
+    z-index: 999;
+    color: aliceblue;
+    bottom: 10px;
+    margin-left: 20px;
+}
+
+.producto-container {
+    border: 1px solid rgba(190, 190, 190, 0.479);
+    border-radius: 20px;
+    width: 500px;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin: 10px 10px;
+    transition: box-shadow 0.5s;
+}
+
+.producto-container:hover {
+    box-shadow: 1.3px 2.6px 2.6px hsla(0, 0%, 43%, 0.315);
+
+}
+
+.product-image-container img {
+    width: 180px;
+    height: 150px;
+    border-radius: 20px;
 }

@@ -1,14 +1,49 @@
-﻿@model List<deliveryapp.Models.Product>
+﻿@model deliveryapp.ViewModels.RestaurantMenuVM
 @{
 }
-<h2>Menu</h2>
-<ul>
-    @foreach (var food in Model)
-    {
-        <div class="">
-            <h3>@food.Name</h3>
-            <p>@food.Description</p>
-            <span>@food.Price</span>
-        </div>
-    }
-</ul>
+<div class="restaurant-banner">
+    
+    <h2>@Model.Restaurant.Name</h2>
+</div>
+<div class="d-flex m-5">
+    <div class="container  justify-content-evenly gap-3">
+        @foreach (var food in Model.Products)
+        {
+            <div class="producto-container  d-inline-flex">
+                <div class="product-info-container p-2">
+                    <h3>@food.Name</h3>
+                    <p>@food.Description</p>
+                    <span>@food.Price</span>
+                </div>
+                <div class="product-image-container">
+                    <img src="@food.ImageUrl" alt="Alternate Text" />
+                </div>
+            </div>
+            <div class="producto-container  d-inline-flex">
+                <div class="product-info-container p-2">
+                    <h3>@food.Name</h3>
+                    <p>@food.Description</p>
+                    <span>@food.Price</span>
+                </div>
+                <div class="product-image-container">
+                    <img src="@food.ImageUrl" alt="Alternate Text" />
+                </div>
+            </div>
+
+             <div class="producto-container  d-inline-flex">
+                <div class="product-info-container p-2">
+                    <h3>@food.Name</h3>
+                    <p>@food.Description</p>
+                    <span>@food.Price</span>
+                </div>
+                <div class="product-image-container">
+                    <img src="@food.ImageUrl" alt="Alternate Text" />
+                </div>
+            </div>          
+        }
+
+    </div>
+    <div>
+        <span>Lista de pedidos</span>
+    </div>
+</div>

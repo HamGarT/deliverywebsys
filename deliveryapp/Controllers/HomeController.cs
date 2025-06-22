@@ -1,5 +1,6 @@
 using deliveryapp.Data;
 using deliveryapp.Models;
+using deliveryapp.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
@@ -29,10 +30,17 @@ namespace deliveryapp.Controllers
             return View(restaurants);
         }
 
-        public async  Task<IActionResult> Menu(int idRestaurant)
+        [HttpGet]
+        public async  Task<IActionResult> Menu(int restaurant_id)
         {
-            var foods = await _context.Products.Where(p => p.IdRestaurant == idRestaurant).ToListAsync();
-            return View(foods);
+            var foods = await _context.Products.Where(p => p.IdRestaurant == restaurant_id).ToListAsync();
+            var  restaurant = await _context.Restaurants.FindAsync(restaurant_id);
+            var viewModel = new RestaurantMenuVM
+            {
+                Restaurant = restaurant,
+                Products = foods
+            };
+            return View(viewModel);
         }
 
         public IActionResult Contact()

@@ -5,7 +5,6 @@
 <div>
     <h2>Restaurant</h2>
     <button id="btnCreate">Crear</button>
-    <button id="btnEdit">Editar</button>
     <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
         background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
     <div id="formModal">
@@ -39,8 +38,15 @@
                     <div class="grid-cell"><img src="@item.ImageUrl" alt="" srcset=""></div>
                     <div class="grid-cell">@item.Email</div>
                     <div class="grid-cell">@item.PhoneNumber</div>
-                    <div class="grid-cell"><button class="btn-primary">🛠</button></div>
-                    <div class="grid-cell"><button class="btn-danger">🗑️</button></div>
+                    <div class="grid-cell"><button class="btnEdit btn-primary" data-id="@item.Id">🛠</button></div>
+                    <div class="grid-cell">
+                        <form asp-controller="RestaurantManagement" asp-action="Delete" asp-route-id="@item.Id" method="post" style="display: inline;">
+                            <button type="submit" class="btn-danger"
+                                    onclick="return confirm('¿Estás seguro de eliminar @item.Name?')">
+                                🗑️
+                            </button>
+                        </form>
+                    </div>
                 </div>
             }
             
@@ -58,8 +64,9 @@
             });
         });
 
-        $('#btnEdit').click(function () {
-            $.get('@Url.Action("Edit", "RestaurantManagement")', function (data) {
+        $('.btnEdit').click(function () {
+            var id = $(this).data('id') || $(this).attr('data-id');
+            $.get('@Url.Action("Editar", "RestaurantManagement")', {id: id},function (data) {
                 $('#formContent').html(data);
                 $('#overlay, #formModal').fadeIn();
             });

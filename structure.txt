@@ -1,6 +1,4 @@
-# Estructura de Proyecto ASP.NET Core - Sistema de Delivery
 
-## Estructura de Carpetas Principal
 
 ```
 DeliverySystem/

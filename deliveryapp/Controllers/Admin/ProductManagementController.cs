@@ -1,5 +1,6 @@
 ﻿using deliveryapp.Data;
 using deliveryapp.Models;
+using deliveryapp.Services;
 using deliveryapp.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,15 @@ namespace deliveryapp.Controllers.Admin
     public class ProductManagementController : Controller
     {
         private readonly AppDBContext  _dbContext;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public ProductManagementController(IWebHostEnvironment webHostEnvironment, AppDBContext dbContext) { 
+        private readonly IImageService _imageService;
+
+        public ProductManagementController(
+            AppDBContext dbContext,
+            IImageService imageService) 
+        { 
             _dbContext = dbContext;
-            _webHostEnvironment = webHostEnvironment;
+            _imageService = imageService;
+            
         }
         [HttpGet]
         public async Task<IActionResult> Index()
@@ -42,46 +48,11 @@ namespace deliveryapp.Controllers.Admin
 
             if (productCreationVM.ImageUpload != null && productCreationVM.ImageUpload.Length > 0)
             {
-
-                if (productCreationVM.ImageUpload.Length > 5 * 1024 * 1024)
-                {
-                    ModelState.AddModelError("ImageUpload", "El archivo es demasiado grande (máximo 5MB)");
-                    return View(productCreationVM);
-                }
-
-
-                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp" };
-                var fileExtension = Path.GetExtension(productCreationVM.ImageUpload.FileName).ToLowerInvariant();
-
-                if (string.IsNullOrEmpty(fileExtension) || !allowedExtensions.Contains(fileExtension))
-                {
-                    ModelState.AddModelError("ImageUpload", "Formato de imagen no válido. Use: jpg, jpeg, png, gif, webp");
-                    return View(productCreationVM);
-                }
-
-
-                var fileName = $"{Guid.NewGuid()}{fileExtension}";
-
-
-                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images", "food");
-
-
-                if (!Directory.Exists(uploadsFolder))
-                {
-                    Directory.CreateDirectory(uploadsFolder);
-                }
-
-                var filePath = Path.Combine(uploadsFolder, fileName);
-
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await productCreationVM.ImageUpload.CopyToAsync(fileStream);
-                }
-
-
-                imagePath = $"/images/food/{fileName}";
-                
+                imagePath = await _imageService.SaveImageAsync(productCreationVM.ImageUpload, "food");
+            }
+            else
+            {
+                imagePath = productCreationVM.Product.ImageUrl;
             }
 
             Product product = new Product
@@ -97,5 +68,67 @@ namespace deliveryapp.Controllers.Admin
             await _dbContext.SaveChangesAsync();
             return RedirectToAction("Index", "ProductManagement");
         }
+
+
+        [HttpGet("Editar")]
+        public async Task<IActionResult> Editar(int id)
+        {
+            Product producto = await _dbContext.Products.Include(u => u.Restaurant).FirstOrDefaultAsync(u => u.Id == id);
+            List<Restaurant> restaurantes = await _dbContext.Restaurants.ToListAsync();
+            ProductCreationVM productCreationVM = new ProductCreationVM
+            {
+                Product = producto,
+                Restaurants = restaurantes
+            };
+            return PartialView("~/Views/Admin/ProductManagement/Editar.cshtml", productCreationVM);
+        }
+
+        [HttpPost("Editar")]
+        public async Task<IActionResult> Editar(ProductCreationVM productCreationVM)
+        {
+            Product product = await _dbContext.Products.FirstOrDefaultAsync(u => u.Id == productCreationVM.Product.Id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            string imagePath = string.Empty;
+            if (productCreationVM.ImageUpload != null && productCreationVM.ImageUpload.Length > 0)
+            {
+                imagePath = await _imageService.SaveImageAsync(productCreationVM.ImageUpload, "food");
+            }
+            else
+            {
+                imagePath = product.ImageUrl;
+            }
+            product.Id = productCreationVM.Product.Id;
+            product.Name = productCreationVM.Product.Name;
+            product.Description = productCreationVM.Product.Description;
+            product.Price = productCreationVM.Product.Price;
+            product.ImageUrl = imagePath;
+            product.IdRestaurant = productCreationVM.SelectedRestaurantId;
+
+            _dbContext.Products.Update(product);
+            await _dbContext.SaveChangesAsync();
+            
+            return RedirectToAction("Index", "ProductManagement");
+        }
+
+        [HttpGet("Delete/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Product product = await _dbContext.Products.FirstOrDefaultAsync(u => u.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            _dbContext.Products.Remove(product);
+            await _dbContext.SaveChangesAsync();
+            if (!string.IsNullOrEmpty(product.ImageUrl))
+            {
+                _imageService.DeleteImage(product.ImageUrl);
+            }
+            return RedirectToAction("Index", "ProductManagement");
+
+        }    
     }
 }

@@ -1,5 +1,10 @@
 ﻿@model deliveryapp.ViewModels.RestaurantVM
 
+@{
+    var isEdit = Model != null && Model.Id > 0;
+    var formAction = isEdit ? "Editar" : "Create";
+}
+
 <div id="createRestaurantForm" class="container">
     <div class="form-container">
         <div class="form-header">
@@ -7,7 +12,12 @@
             <p class="text-muted text-center">Llenar todos los detalles</p>
         </div>
 
-        <form id="modernForm" asp-controller="RestaurantManagement" asp-action="Create" method="post" enctype="multipart/form-data">
+        <form id="modernForm" asp-controller="RestaurantManagement" asp-action="@formAction" method="post" enctype="multipart/form-data">
+            @* @Html.AntiForgeryToken() *@
+            @if (isEdit)
+            {
+                <input type="hidden" asp-for="Id" />
+            }
             <div class="row mb-4">
                 <div class="col-md-12">
                     <label for="name" class="form-label">Nombre</label>
@@ -62,7 +72,14 @@
                     </div>
                 </div>
             </div>
-
+            @if (Model != null && Model.ImagePath != null)
+            {
+                <div class="mb-2">
+                    <p class="text-muted small">Imagen actual:</p>
+                    <img src="@Model.ImagePath" alt="Imagen actual" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+                </div>
+            }
+            <input type="hidden" asp-for="ImagePath" />
             <div class="row mt-4">
                 <div class="col d-flex justify-content-between">
                     <button type="button" class="btn btn-outline-secondary">Cancelar</button>
@@ -76,17 +93,4 @@
 </div>
 
 
-@section Scripts {
-    @* <script>
-        $('#createRestaurantForm').submit(function (e) {
-            e.preventDefault();
-            const formData = $(this).serialize();
-            $.post('@Url.Action("Create", "RestaurantManagement")', formData, function (response) {
-                alert("Restaurante creado correctamente.");
-                $('#overlay, #formModal').fadeOut();
-            }).fail(function () {
-                alert("Error al crear restaurante.");
-            });
-        });
-    </script> *@
-}
+
