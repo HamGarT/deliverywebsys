@@ -1,0 +1,195 @@
+﻿#formModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    border-radius: 8px;
+    min-width: 600px;
+}
+
+.product-card-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    min-height: 70vh;
+    position: relative;
+}
+
+.product-card-container .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    text-align: center;
+}
+
+.product-card-container .close-btn {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.product-card-container .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.product-card-container .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%), linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+.product-card-container .product-details {
+    padding: 20px;
+}
+
+.product-card-container .product-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-card-container .product-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.product-card-container .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: right;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+.product-card-container .quantity-section {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.product-card-container .quantity-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.product-card-container .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card-container .quantity-btn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.quantity-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.product-card-container .quantity-display {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    min-width: 30px;
+    text-align: center;
+}
+
+.product-card-container .add-to-cart {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 550px;
+    background: #E86352;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background: #c5594b;
+}
+
+.product-card-container .cart-icon {
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-card-container .cart-text {
+    flex: 1;
+    text-align: center;
+    margin: 0 16px;
+}
+
+.product-card-container .total-price {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .add-to-cart {
+        max-width: 100%;
+    }
+}

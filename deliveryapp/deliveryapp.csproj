@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\icons\" />
-    <Folder Include="wwwroot\images\food\" />
-    <Folder Include="wwwroot\images\restaurants\" />
+    <Folder Include="wwwroot\images\users\" />
   </ItemGroup>
 
   <ItemGroup>

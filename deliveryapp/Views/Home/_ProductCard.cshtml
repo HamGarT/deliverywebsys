@@ -1,0 +1,45 @@
+﻿
+
+@model deliveryapp.Models.Product;
+
+<form class="product-card-container" asp-controller="Home" asp-action="AddCart" method="get">
+    <input type="hidden"  name="id" value="@Model.Id" />
+    <input type="hidden" name="quantity" id="quantityInput" value="1" />
+    <input type="number" hidden name="price" value="@Model.Price" />
+    <div class="header">
+        <span class="close-btn">&times;</span>
+        <span class="title">@Model.Name</span>
+    </div>
+
+    <img src="@Model.ImageUrl"  class="product-image">
+
+    <div class="product-details">
+        <h1 class="product-title">@Model.Name</h1>
+        <p class="product-description">
+            @Model.Description
+        </p>
+        <div id="product-card-price" class="price">S/@Model.Price</div>
+    </div>
+
+    <div class="quantity-section">
+        <div class="quantity-label">Unidades</div>
+        <div class="quantity-controls">
+            <div class="quantity-btn" onclick="decreaseQuantity()" id="decreaseBtn">−</div>
+            <span class="quantity-display" id="quantity">1</span>
+            <div class="quantity-btn" onclick="increaseQuantity()">+</div>
+        </div>
+    </div>
+
+    <button type="submit"  class="add-to-cart">
+        <div class="cart-icon">i</div>
+        <span class="cart-text">Agregar a mi pedido</span>
+        <span class="total-price" id="totalPrice">S/@Model.Price</span>
+    </button>
+</form>
+
+@section    Scripts {
+    <script>
+        document.getElementById('addToCart').addEventListener('click', () => {console.log("siiii") })
+        console.log("jsjsjjs")
+    </script>
+}

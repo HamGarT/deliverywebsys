@@ -1,49 +1,114 @@
 ﻿@model deliveryapp.ViewModels.RestaurantMenuVM
 @{
 }
+<div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
+<div id="formModal">
+    <button id="btnClose">X</button>
+    <div id="formContent"></div>
+</div>
 <div class="restaurant-banner">
     
     <h2>@Model.Restaurant.Name</h2>
 </div>
-<div class="d-flex m-5">
+<div class="product-and-orders d-flex my-5">
     <div class="container  justify-content-evenly gap-3">
         @foreach (var food in Model.Products)
         {
-            <div class="producto-container  d-inline-flex">
+            <div class="producto-container  d-inline-flex" data-id="@food.Id">
                 <div class="product-info-container p-2">
                     <h3>@food.Name</h3>
                     <p>@food.Description</p>
-                    <span>@food.Price</span>
+                    <span>S/@food.Price</span>
                 </div>
                 <div class="product-image-container">
                     <img src="@food.ImageUrl" alt="Alternate Text" />
                 </div>
-            </div>
-            <div class="producto-container  d-inline-flex">
-                <div class="product-info-container p-2">
-                    <h3>@food.Name</h3>
-                    <p>@food.Description</p>
-                    <span>@food.Price</span>
-                </div>
-                <div class="product-image-container">
-                    <img src="@food.ImageUrl" alt="Alternate Text" />
-                </div>
-            </div>
-
-             <div class="producto-container  d-inline-flex">
-                <div class="product-info-container p-2">
-                    <h3>@food.Name</h3>
-                    <p>@food.Description</p>
-                    <span>@food.Price</span>
-                </div>
-                <div class="product-image-container">
-                    <img src="@food.ImageUrl" alt="Alternate Text" />
-                </div>
-            </div>          
+            </div>       
         }
 
     </div>
-    <div>
-        <span>Lista de pedidos</span>
+    <div class="orders-list-container">
+        <div class="order-header">
+            <h2 class="order-title">Mi pedido</h2>
+            <button class="edit-btn" onclick="editOrder()">Editar</button>
+        </div>
+
+        <div class="order-items">
+            <div class="order-item">
+                <div class="item-info">
+                    <span class="item-quantity">1x</span>
+                    <span class="item-name">Crocante manzana</span>
+                </div>
+                <span class="item-price">S/12.9</span>
+            </div>
+            @if(Model.Cart != null) {
+                 @foreach (var item in Model.Cart){
+                <div class="order-item">
+                    <div class="item-info">
+                        <span class="item-quantity">@(item.Quantity+"x")</span>
+                        <span class="item-name">@item.Product.Name</span>
+                    </div>
+                    <span class="item-price">S/@item.TotalPrice</span>
+                </div>
+            }
+            }
+            
+                
+           
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <div class="empty-state-icon">🛒</div>
+            <p>Tu pedido está vacío</p>
+            <p style="font-size: 12px; margin-top: 8px; opacity: 0.7;">Agrega productos para continuar</p>
+        </div>
+
+        @if (Model.Cart.Count() > 0)
+        {
+            <a class="continue-btn" id="continueBtn" asp-controller="Home" asp-action="AddToUserOrders">Continuar</a>
+        }
+
+        
     </div>
 </div>
+
+@section Scripts {
+    <script>
+
+        // $('#addToCart').click(function () {
+        //     console.log("sii");
+        //     var idProduct = $(this).data('id') || $(this).attr('data-id');
+        //     $.get('@Url.Action("AddCart", "Home")',{id: idProduct});
+        // });
+
+        // function addToCart() {
+        //     console.log("sii");
+        //     var idProduct = $(this).data('id') || $(this).attr('data-id');
+        //     $.get('@Url.Action("AddCart", "Home")', { id: idProduct });
+        // }
+
+        $('.producto-container').click(function () {
+            var id = $(this).data('id') || $(this).attr('data-id');
+            $.get('/ProductCard?id=' + id, function (data) {
+                $('#formContent').html(data);
+                $('#overlay, #formModal').fadeIn();
+                setTimeout(function() {
+                    const priceElement = document.getElementById('product-card-price');
+                    if (priceElement && typeof window.setBasePrice === 'function') {
+                        const price = parseFloat(priceElement.textContent.replace('S/', ''));
+                        window.setBasePrice(price);
+                    }
+                    
+                }, 150);
+            });
+            
+        });
+
+        $('#btnClose, #overlay').click(function () {
+            $('#overlay, #formModal').fadeOut();
+        });
+
+        
+    </script>
+}

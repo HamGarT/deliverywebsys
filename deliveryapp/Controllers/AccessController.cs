@@ -66,11 +66,16 @@ namespace deliveryapp.Controllers
                 return View();
             }
 
+            var firstName = user.Names.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+            var lastName = user.LastNames.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+            string username = $"{firstName} {lastName}";
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.Names),
+                new Claim("UserId", user.Id.ToString()),
+                new Claim(ClaimTypes.Name, username),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Rol.name)
+                
             };
 
             var indentity = new ClaimsIdentity(claims, "CookieAuth");

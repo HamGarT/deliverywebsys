@@ -22,6 +22,122 @@ namespace deliveryapp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("deliveryapp.Models.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("CartItems");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DeliveryAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("RestaurantId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RestaurantId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItems");
+                });
+
             modelBuilder.Entity("deliveryapp.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -54,6 +170,152 @@ namespace deliveryapp.Migrations
                     b.HasIndex("IdRestaurant");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Delicious cheese pizza",
+                            IdRestaurant = 1,
+                            ImageUrl = "/images/food/pizza.webp",
+                            Name = "Pizza",
+                            Price = 9.99m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Juicy beef burger",
+                            IdRestaurant = 2,
+                            ImageUrl = "/images/food/burger.jpg",
+                            Name = "Hamburguesa",
+                            Price = 8.99m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Creamy Alfredo pasta",
+                            IdRestaurant = 3,
+                            ImageUrl = "/images/food/pasta.jpg",
+                            Name = "Pasta",
+                            Price = 10.99m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Fresh garden salad",
+                            IdRestaurant = 4,
+                            ImageUrl = "/images/food/salad.jpg",
+                            Name = "Ensalada",
+                            Price = 7.99m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Assorted sushi platter",
+                            IdRestaurant = 1,
+                            ImageUrl = "/images/food/sushi.jpg",
+                            Name = "Sushi",
+                            Price = 12.99m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Spicy chicken tacos",
+                            IdRestaurant = 2,
+                            ImageUrl = "/images/food/tacos.jpg",
+                            Name = "Tacos",
+                            Price = 6.99m
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Grilled",
+                            IdRestaurant = 3,
+                            ImageUrl = "/images/food/steak.jpg",
+                            Name = "Bistec",
+                            Price = 15.99m
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Vanilla ice cream with chocolate sauce",
+                            IdRestaurant = 4,
+                            ImageUrl = "/images/food/icecream.jpg",
+                            Name = "Helado de Vainilla",
+                            Price = 4.99m
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Vegetable fried rice",
+                            IdRestaurant = 1,
+                            ImageUrl = "/images/food/friedrice.jpg",
+                            Name = "Arroz frito",
+                            Price = 7.99m
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Classic Caesar salad with croutons",
+                            IdRestaurant = 2,
+                            ImageUrl = "/images/food/caesarsalad.jpg",
+                            Name = "Ensalada Cesar",
+                            Price = 5.99m
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Salmon fillet with lemon butter sauce",
+                            IdRestaurant = 3,
+                            ImageUrl = "/images/food/grilledsalmon.jpg",
+                            Name = "Salmon a la parrilla",
+                            Price = 14.99m
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Rich chocolate cake with ganache",
+                            IdRestaurant = 4,
+                            ImageUrl = "/images/food/chocolatecake.jpg",
+                            Name = "Pastel de Chocolate",
+                            Price = 6.99m
+                        });
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Repartidor", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Apellidos")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Dni")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("Repartidor");
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Restaurant", b =>
@@ -91,6 +353,48 @@ namespace deliveryapp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Restaurants");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "123 Main St",
+                            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                            Email = "restauranta@mail.com",
+                            ImageUrl = "/images/restaurants/restauranta.jpg",
+                            Name = "Restaurant A",
+                            PhoneNumber = "123-456-7890"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "456 Elm St",
+                            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                            Email = "restaurantb@mail.com",
+                            ImageUrl = "/images/restaurants/restaurantb.jpg",
+                            Name = "Restaurant B",
+                            PhoneNumber = "987-654-3210"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Address = "789 Oak St",
+                            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                            Email = "restaurantc@mail.com",
+                            ImageUrl = "/images/restaurants/restaurantc.jpg",
+                            Name = "Restaurant C",
+                            PhoneNumber = "555-555-5555"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Address = "321 Pine St",
+                            Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                            Email = "restaurantd@mail.com",
+                            ImageUrl = "/images/restaurants/restaurantd.jpg",
+                            Name = "Restaurant D",
+                            PhoneNumber = "111-222-3333"
+                        });
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Roles", b =>
@@ -166,6 +470,96 @@ namespace deliveryapp.Migrations
                     b.HasIndex("IdRole");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "admin@mail.com",
+                            IdRole = 1,
+                            LastNames = "User",
+                            Names = "Admin",
+                            Password = "admin123"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "regular@mail.com",
+                            IdRole = 2,
+                            LastNames = "User",
+                            Names = "Regular",
+                            Password = "user123"
+                        });
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Cart", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Usuario", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.CartItem", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("deliveryapp.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Order", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Restaurant", "Restaurant")
+                        .WithMany()
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("deliveryapp.Models.Usuario", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Restaurant");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.OrderItem", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("deliveryapp.Models.Product", "Product")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Product", b =>
@@ -179,6 +573,17 @@ namespace deliveryapp.Migrations
                     b.Navigation("Restaurant");
                 });
 
+            modelBuilder.Entity("deliveryapp.Models.Repartidor", b =>
+                {
+                    b.HasOne("deliveryapp.Models.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("deliveryapp.Models.Usuario", b =>
                 {
                     b.HasOne("deliveryapp.Models.Roles", "Rol")
@@ -188,6 +593,21 @@ namespace deliveryapp.Migrations
                         .IsRequired();
 
                     b.Navigation("Rol");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
+                });
+
+            modelBuilder.Entity("deliveryapp.Models.Product", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Restaurant", b =>

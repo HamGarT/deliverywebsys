@@ -1,4 +1,35 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿let quantity = 1;
+let basePrice = 0;
+function setBasePrice(price) {
+    basePrice = price;
+}
 
-// Write your JavaScript code.
+function updateDisplay() {
+    document.getElementById('quantity').textContent = quantity;
+    document.getElementById('totalPrice').textContent = `S/${(basePrice * quantity).toFixed(1)}`;
+    document.getElementById('decreaseBtn').disabled = quantity <= 1;
+}
+
+function increaseQuantity() {
+    if (quantity < 10) {
+        quantity++;
+        updateDisplay();
+        document.getElementById('quantityInput').value = quantity;
+    }
+}
+
+function decreaseQuantity() {
+    if (quantity > 1) {
+        quantity--;
+        updateDisplay();
+        document.getElementById('quantityInput').value = quantity;
+    }
+}
+
+//function addToCart() {
+//    console.log("sii");
+//    var idProduct = document.getElementById('addToCart').getAttribute('data-id');
+//    $.get('/Home/AddCart?id='+idProduct);
+//}
+
+window.setBasePrice = setBasePrice;

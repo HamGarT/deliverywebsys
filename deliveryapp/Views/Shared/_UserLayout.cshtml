@@ -1,0 +1,301 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/customgrids.css" asp-append-version="true" />
+    <title>My Account</title>
+    <style>
+       
+        :root {
+            --sidebar-width: 280px;
+            --sidebar-collapsed-width: 80px;
+            --primary-gradient: #F9F9F9;
+            --hover-bg: rgba(255, 255, 255, 0.1);
+            --text-muted: rgba(255, 255, 255, 0.7);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            font-family: "Host Grotesk", sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            height: 98vh;
+            width: var(--sidebar-width);
+            background: var(--primary-gradient);
+            backdrop-filter: blur(10px);
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            border-radius: 10px;
+            transform: translateY(-50%);
+        }
+
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 2rem;
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .back-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #007bff;
+            background: white;
+            border-radius: 4px;
+            margin-right: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .back-btn::before {
+                content: '←';
+                color: #007bff;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .profile-section {
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .avatar-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-text h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .profile-text p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .edit-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+            .edit-btn::before {
+                content: '✏️';
+                font-size: 16px;
+            }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #f1f3f4;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+            .menu-item:hover {
+                background-color: #f8f9fa;
+                margin: 0 -20px;
+                padding: 15px 20px;
+            }
+
+            .menu-item:last-child {
+                border-bottom: none;
+            }
+
+        .menu-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            opacity: 0.6;
+        }
+
+        .menu-text {
+            font-size: 15px;
+            color: #333;
+        }
+
+        .menu-arrow {
+            color: #999;
+            font-size: 14px;
+        }
+
+            .menu-arrow::before {
+                content: '>';
+            }
+
+       
+        .icon-orders::before {
+            content: '📦';
+        }
+
+        .icon-chat::before {
+            content: '💬';
+        }
+
+        .icon-shield::before {
+            content: '🛡️';
+        }
+
+        .icon-privacy::before {
+            content: '🔒';
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <header class="header">
+            <a class="back-btn" asp-controller="Home" asp-action="Index"></a>
+            <h1>My Account</h1>
+        </header>
+
+        <div class="profile-section">
+            <div class="profile-info">
+                <div class="profile-left">
+                    <div class="avatar">
+                        <div style="color: white; font-size: 20px; font-weight: bold;">👨</div>
+                    </div>
+                    <div class="profile-text">
+                        <h2>@User.Identity.Name</h2>
+                        <p>@User.FindFirst(ClaimTypes.Email)?.Value</p>
+                    </div>
+                </div>
+                <button class="edit-btn"></button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">General</h3>
+            <div class="menu-item">
+                <div class="menu-left">
+                    <span class="menu-icon icon-orders"></span>
+                    <span class="menu-text">Mis ordenes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Soporte</h3>
+            <div class="menu-item">
+                <div class="menu-left">
+                    <span class="menu-icon icon-chat"></span>
+                    <span class="menu-text">Necesitas ayuda? hablemos</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-left">
+                    <span class="menu-icon icon-shield"></span>
+                    <span class="menu-text">Lender Protection Guarantee</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-left">
+                    <span class="menu-icon icon-privacy"></span>
+                    <span class="menu-text">Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content" id="mainContent">
+        @RenderBody()
+    </main>
+
+    <script>
+        
+        document.querySelector('.back-btn').addEventListener('click', function() {
+            console.log('Back button clicked');
+        });
+
+        document.querySelector('.edit-btn').addEventListener('click', function() {
+            console.log('Edit profile clicked');
+        });
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const text = this.querySelector('.menu-text').textContent;
+                console.log(`Menu item clicked: ${text}`);
+            });
+        });
+    </script>
+</body>
+</html>

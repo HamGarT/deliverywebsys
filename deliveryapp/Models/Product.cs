@@ -20,5 +20,7 @@ namespace deliveryapp.Models
         public int IdRestaurant { get; set; }
         [ForeignKey("IdRestaurant")]
         public Restaurant Restaurant { get; set; }
+
+        public IEnumerable<OrderItem> OrderItems { get; set; }
     }
 }
