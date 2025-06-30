@@ -12,8 +12,8 @@ using deliveryapp.Data;
 namespace deliveryapp.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250628071352_m2")]
-    partial class m2
+    [Migration("20250630080707_m1")]
+    partial class m1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,6 +83,10 @@ namespace deliveryapp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("DeliveryAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
@@ -95,6 +99,9 @@ namespace deliveryapp.Migrations
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TotalItems")
+                        .HasColumnType("int");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -283,9 +290,11 @@ namespace deliveryapp.Migrations
 
             modelBuilder.Entity("deliveryapp.Models.Repartidor", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Apellidos")
                         .IsRequired()
@@ -295,12 +304,12 @@ namespace deliveryapp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nombres")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
@@ -312,9 +321,49 @@ namespace deliveryapp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
-
                     b.ToTable("Repartidor");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Apellidos = "Juarez",
+                            Dni = "87231476",
+                            ImageUrl = "/images/repartidores/pedrojuarez.jpg",
+                            Nombres = "Pedro",
+                            Telefono = "972345712",
+                            status = "Disponible"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Apellidos = "Lopez",
+                            Dni = "12345678",
+                            ImageUrl = "/images/repartidores/marialopez.jpg",
+                            Nombres = "Maria",
+                            Telefono = "987654321",
+                            status = "Ocupado"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Apellidos = "Perez",
+                            Dni = "87654321",
+                            ImageUrl = "/images/repartidores/juanperez.jpg",
+                            Nombres = "Juan",
+                            Telefono = "934728345",
+                            status = "offline"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Apellidos = "Gomez",
+                            Dni = "23456789",
+                            ImageUrl = "/images/repartidores/rubengomez.jpg",
+                            Nombres = "Ruben",
+                            Telefono = "907012734",
+                            status = "Disponible"
+                        });
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Restaurant", b =>
@@ -570,17 +619,6 @@ namespace deliveryapp.Migrations
                         .IsRequired();
 
                     b.Navigation("Restaurant");
-                });
-
-            modelBuilder.Entity("deliveryapp.Models.Repartidor", b =>
-                {
-                    b.HasOne("deliveryapp.Models.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("deliveryapp.Models.Usuario", b =>

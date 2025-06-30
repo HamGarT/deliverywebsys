@@ -1,0 +1,54 @@
+﻿
+@{
+}
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model deliveryapp.ViewModels.OrdersVM
+<section>
+    <div class="section-title">
+        <h2>Mis Ordenes</h2>
+    </div>
+    <div class="grid-table grid-user-orders-table">
+        <div class="grid-header-two">
+            <div class="grid-cell">Restaurant</div>
+            <div class="grid-cell">Fecha</div>
+            <div class="grid-cell">Dirección</div>
+            <div class="grid-cell">Precio Total</div>
+            <div class="grid-cell">Estado</div>
+        </div>
+
+        @if (Model?.Orders != null && Model.Orders.Any())
+        {
+            @foreach (var item in Model.Orders)
+            {
+                <div class="grid-row-two">
+                    <div class="grid-cell">@item.Restaurant?.Name</div>
+                    <div class="grid-cell">@item.OrderDate</div>
+                    <div class="grid-cell">@item.DeliveryAddress</div>
+                    <div class="grid-cell">S/@item.TotalAmount</div>
+                    @if (item.Status == "Pendiente")
+                    {
+                        <div class="grid-cell"><span class="custom-badge badge-pending">@item.Status</span></div>
+                    }
+                    else if (item.Status == "Completado")
+                    {
+                        <div class="grid-cell"><span class="custom-badge badge-success">@item.Status</span></div>
+                    }
+                    else if (item.Status == "Cancelado")
+                    {
+                        <div class="grid-cell"><span class="custom-badge badge-canceled">@item.Status</span></div>
+                    }
+                </div>
+            }
+        }
+        else
+        {
+            <div class="grid-row-two">
+                <div class="grid-cell" colspan="5">No orders found.</div>
+            </div>
+        }
+    </div>
+</section>

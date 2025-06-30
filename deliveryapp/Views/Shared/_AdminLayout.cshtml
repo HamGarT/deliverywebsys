@@ -6,7 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/customgrids.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/tables.custom.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/forms.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
         <div class="sidebar-header">
             <a href="#" class="logo">
                 <i class="fas fa-cube"></i>
-                <span>Delivery</span>
+                <span>Ñamigo</span>
             </a>
             <button class="toggle-btn d-none d-md-block" onclick="toggleSidebar()">
                 <i class="fas fa-chevron-left" id="toggleIcon"></i>
@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#" class="nav-link">
+                <a class="nav-link" asp-controller="RepartidorManagement" asp-action="Index">
                     <i class="fas fa-users"></i>
                     <span>Repartidores</span>
                 </a>

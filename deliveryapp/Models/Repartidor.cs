@@ -8,7 +8,7 @@ namespace deliveryapp.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombres  { get; set; }
         public string Apellidos { get; set; }
 
@@ -18,10 +18,9 @@ namespace deliveryapp.Models
 
         public string Dni {  get; set; }
 
-        public int OrderId { get; set; }
+        public string? ImageUrl { get; set; } // Optional, if you want to store an image URL for the delivery person
 
-        [ForeignKey("OrderId")]
-        public Order Order { get; set; }
-        
+
+
     }
 }

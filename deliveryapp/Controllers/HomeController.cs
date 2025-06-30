@@ -94,8 +94,9 @@ namespace deliveryapp.Controllers
                 OrderDate = DateTime.Now,
                 Status = "Pendiente",
                 TotalAmount = _productService.GetTotalAmount(),
-                DeliveryAddress= "123 Main St"
-           };
+                DeliveryAddress= "123 Main St",
+                TotalItems = _productService.GetTotalItems()
+            };
             await _context.Orders.AddAsync(order);
             await _context.SaveChangesAsync();
             foreach (var item in _productService.GetAll())

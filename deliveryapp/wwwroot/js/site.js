@@ -26,10 +26,4 @@ function decreaseQuantity() {
     }
 }
 
-//function addToCart() {
-//    console.log("sii");
-//    var idProduct = document.getElementById('addToCart').getAttribute('data-id');
-//    $.get('/Home/AddCart?id='+idProduct);
-//}
-
 window.setBasePrice = setBasePrice;

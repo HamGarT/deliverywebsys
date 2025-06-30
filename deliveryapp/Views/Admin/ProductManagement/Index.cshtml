@@ -2,33 +2,22 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @model List<deliveryapp.Models.Product>
-<div>
-    <h2>Productos</h2>
-    <button id="btnCreate">Crear</button>
-    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
-    <div id="formModal">
-        <button id="btnClose">X</button>
-        <div id="formContent"></div>
+<section>
+    <div class="section-title">
+        <h2>Productos</h2>
     </div>
-
-    <div class="Restaurants-List">
+    <div class="Restaurants-table table-container">
+        <div class="table-controls">
+            <button class="btn-create" id="btnCreate">+ Nuevo Producto</button>
+        </div>
         <div class="grid-table">
             <div class="grid-header">
                 <div class="grid-cell">Nombre</div>
                 <div class="grid-cell">Imagen</div>
                 <div class="grid-cell">Precio</div>
                 <div class="grid-cell">Restaurant</div>
-                <div class="grid-cell">Editar</div>
-                <div class="grid-cell">Eliminar</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">TestProduct</div>
-                <div class="grid-cell"><img src="" alt="" srcset=""></div>
-                <div class="grid-cell">S/.12</div>
-                <div class="grid-cell">Restaurant1</div>
-                <div class="grid-cell"><button class="btn-primary">🛠</button></div>
-                <div class="grid-cell"><button class="btn-danger">🗑️</button></div>
+                <div class="grid-cell">Action</div>
+               
             </div>
 
             @foreach (var item in Model)
@@ -36,16 +25,26 @@
                 <div class="grid-row">
                     <div class="grid-cell">@item.Name</div>
                     <div class="grid-cell"><img src="@item.ImageUrl" alt="" srcset=""></div>
-                    <div class="grid-cell">@item.Price</div>
+                    <div class="grid-cell">S/@item.Price</div>
                     <div class="grid-cell">@item.Restaurant.Name</div>
-                    <div class="grid-cell"><button class="btn-primary btnEdit" data-id="@item.Id">🛠</button></div>
-                    <div class="grid-cell"><a class="btn-danger" asp-controller="ProductManagement" asp-action="Delete" asp-route-id="@item.Id">🗑️</a></div>
+                   
+                    <div class="grid-cell">
+                        <button class="btn-primary btnEdit" data-id="@item.Id">🛠</button>
+                        <a class="btn-danger" asp-controller="ProductManagement" asp-action="Delete" asp-route-id="@item.Id">🗑️</a>
+                        
+                    </div>
                 </div>
             }
 
         </div>
     </div>
-</div>
+    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
+    <div id="formModal">
+        <button id="btnClose">X</button>
+        <div id="formContent"></div>
+    </div>
+</section>
 
 @section Scripts {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\icons\" />
+    <Folder Include="wwwroot\images\repartidores\" />
     <Folder Include="wwwroot\images\users\" />
   </ItemGroup>
 

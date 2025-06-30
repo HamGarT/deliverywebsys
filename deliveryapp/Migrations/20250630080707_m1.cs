@@ -14,6 +14,24 @@ namespace deliveryapp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Repartidor",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Dni = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Repartidor", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Restaurants",
                 columns: table => new
                 {
@@ -122,7 +140,9 @@ namespace deliveryapp.Migrations
                     RestaurantId = table.Column<int>(type: "int", nullable: false),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    TotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DeliveryAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TotalItems = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -196,25 +216,15 @@ namespace deliveryapp.Migrations
                         principalColumn: "Id");
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Repartidor",
-                columns: table => new
+            migrationBuilder.InsertData(
+                table: "Repartidor",
+                columns: new[] { "Id", "Apellidos", "Dni", "ImageUrl", "Nombres", "Telefono", "status" },
+                values: new object[,]
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Dni = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Repartidor", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Repartidor_Orders_OrderId",
-                        column: x => x.OrderId,
-                        principalTable: "Orders",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    { 1, "Juarez", "87231476", "/images/repartidores/pedrojuarez.jpg", "Pedro", "972345712", "Disponible" },
+                    { 2, "Lopez", "12345678", "/images/repartidores/marialopez.jpg", "Maria", "987654321", "Ocupado" },
+                    { 3, "Perez", "87654321", "/images/repartidores/juanperez.jpg", "Juan", "934728345", "offline" },
+                    { 4, "Gomez", "23456789", "/images/repartidores/rubengomez.jpg", "Ruben", "907012734", "Disponible" }
                 });
 
             migrationBuilder.InsertData(
@@ -254,6 +264,15 @@ namespace deliveryapp.Migrations
                     { 10, "Classic Caesar salad with croutons", 2, "/images/food/caesarsalad.jpg", "Ensalada Cesar", 5.99m },
                     { 11, "Salmon fillet with lemon butter sauce", 3, "/images/food/grilledsalmon.jpg", "Salmon a la parrilla", 14.99m },
                     { 12, "Rich chocolate cake with ganache", 4, "/images/food/chocolatecake.jpg", "Pastel de Chocolate", 6.99m }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreatedAt", "Email", "IdRole", "LastNames", "Names", "Password" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@mail.com", 1, "User", "Admin", "admin123" },
+                    { 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "regular@mail.com", 2, "User", "Regular", "user123" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -297,11 +316,6 @@ namespace deliveryapp.Migrations
                 column: "IdRestaurant");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Repartidor_OrderId",
-                table: "Repartidor",
-                column: "OrderId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Users_IdRole",
                 table: "Users",
                 column: "IdRole");
@@ -323,16 +337,16 @@ namespace deliveryapp.Migrations
                 name: "Carts");
 
             migrationBuilder.DropTable(
-                name: "Products");
-
-            migrationBuilder.DropTable(
                 name: "Orders");
 
             migrationBuilder.DropTable(
-                name: "Restaurants");
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "Restaurants");
 
             migrationBuilder.DropTable(
                 name: "Roles");

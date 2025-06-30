@@ -287,3 +287,16 @@ body {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 }
+
+.btn-action-table {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    display: inline-block;
+}
+
+.btn-action-table svg{
+    width: 30px;
+    height: 30px;
+}

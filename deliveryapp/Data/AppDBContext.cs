@@ -54,6 +54,12 @@ namespace deliveryapp.Data
 
             );
 
+            modelBuilder.Entity<Repartidor>().HasData(
+                new Repartidor { Id = 1, Nombres = "Pedro", Apellidos="Juarez", Telefono = "972345712", status= "Disponible", Dni="87231476", ImageUrl="/images/repartidores/pedrojuarez.jpg"},
+                new Repartidor { Id = 2, Nombres = "Maria", Apellidos = "Lopez", Telefono = "987654321", status = "Ocupado", Dni = "12345678", ImageUrl = "/images/repartidores/marialopez.jpg" },
+                new Repartidor { Id = 3, Nombres = "Juan", Apellidos = "Perez", Telefono = "934728345", status = "offline", Dni = "87654321", ImageUrl = "/images/repartidores/juanperez.jpg" },
+                new Repartidor { Id = 4, Nombres = "Ruben", Apellidos = "Gomez", Telefono = "907012734", status = "Disponible", Dni = "23456789", ImageUrl = "/images/repartidores/rubengomez.jpg" }
+            );
             modelBuilder.Entity<OrderItem>()
             .HasOne(oi => oi.Product)
             .WithMany(p => p.OrderItems)

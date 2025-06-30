@@ -23,6 +23,16 @@ namespace deliveryapp.Services
             }
           return totalAmount;
         }
+
+        public int GetTotalItems()
+        {
+            int totalItems = 0;
+            foreach (var item in _cartItems)
+            {
+                totalItems += item.Quantity;
+            }
+            return totalItems;
+        }
         public void ClearCart() { 
             _cartItems.Clear();
         }

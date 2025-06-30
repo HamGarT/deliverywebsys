@@ -2,33 +2,23 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @model List<deliveryapp.Models.Restaurant>
-<div>
-    <h2>Restaurant</h2>
-    <button id="btnCreate">Crear</button>
-    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
-    <div id="formModal">
-        <button id="btnClose">X</button>
-        <div id="formContent"></div>
+<section>
+    <div class="section-title">
+        <h2>Restaurants</h2>
     </div>
-
-    <div class="Restaurants-List">
+    
+    <div class="Restaurants-table table-container">
+        <div class="table-controls">
+            <button class="btn-create" id="btnCreate">+ Nuevo Restaurant</button>
+        </div>
         <div class="grid-table">
             <div class="grid-header">
                 <div class="grid-cell">Nombre</div>
                 <div class="grid-cell">Imagen</div>
                 <div class="grid-cell">Email</div>
                 <div class="grid-cell">Teléfono</div>
-                <div class="grid-cell">Editar</div>
-                <div class="grid-cell">Eliminar</div>
-            </div>
-            <div class="grid-row">
-                <div class="grid-cell">TestRestaurant</div>
-                <div class="grid-cell"><img src="" alt="" srcset=""></div>
-                <div class="grid-cell">test@gmail.com</div>
-                <div class="grid-cell">98345678</div>
-                <div class="grid-cell"><button class="btn-primary">🛠</button></div>
-                <div class="grid-cell"><button class="btn-danger">🗑️</button></div>
+                <div class="grid-cell">Action</div>
+                
             </div>
 
             @foreach (var item in Model)
@@ -38,8 +28,8 @@
                     <div class="grid-cell"><img src="@item.ImageUrl" alt="" srcset=""></div>
                     <div class="grid-cell">@item.Email</div>
                     <div class="grid-cell">@item.PhoneNumber</div>
-                    <div class="grid-cell"><button class="btnEdit btn-primary" data-id="@item.Id">🛠</button></div>
                     <div class="grid-cell">
+                        <button class="btnEdit btn-primary" data-id="@item.Id">🛠</button>
                         <form asp-controller="RestaurantManagement" asp-action="Delete" asp-route-id="@item.Id" method="post" style="display: inline;">
                             <button type="submit" class="btn-danger"
                                     onclick="return confirm('¿Estás seguro de eliminar @item.Name?')">
@@ -52,7 +42,13 @@
             
         </div>
     </div>
-</div>
+    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
+    <div id="formModal">
+        <button id="btnClose">X</button>
+        <div id="formContent"></div>
+    </div>
+</section>
 
 @section Scripts {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

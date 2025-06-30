@@ -1,16 +1,39 @@
-﻿.grid-table {
-    width: 90%;
+﻿.section-title, 
+.table-controls,
+.grid-table{
+    width: 95%;
     margin: auto;
+}
+
+.table-container{
+    position: relative;
+    margin-top: 20px;
+}
+.table-controls{
+    height: 50px;
+    position: relative;
+}
+
+.btn-create{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #295733;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+
 }
 
 .grid-header,
 .grid-row {
     
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    border: 1px solid rgba(235, 235, 235, 0.822);
+    grid-template-columns: repeat(5, 1fr);
+    border: 2.21px solid rgba(235, 235, 235, 0.822);
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
+    font-weight: 500;
+    padding: 5px 0;
 }
 
     .grid-row:hover {
@@ -22,8 +45,9 @@
     font-weight: 700;
     border: none;
     background-color: #F4F6F8;
-    padding: 20px 0;
+    padding: 15px 0;
     box-shadow: none;
+    color: #868686;
 }
 
 .grid-cell {
@@ -33,16 +57,17 @@
 .grid-row img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
-
-
 
 .grid-header-two,
 .grid-row-two {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     border-bottom: 2.2px solid rgba(235, 235, 235, 0.822);
-    padding: 20px 0;
+    padding: 15px 0;
+    font-weight: 500;
 }
 
     .grid-row-two:hover {
@@ -55,16 +80,16 @@
     font-weight: 700;
     border: none;
     background-color: #F8F7FC;
-    padding: 20px 0;
+    padding: 14px 0;
     box-shadow: none;
     border-radius: 10px;
+    color: rgb(121, 121, 121);
 }
-
-
-
 .grid-row-two img {
     width: 50px;
     height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .grid-user-orders-table .grid-header-two,
@@ -72,9 +97,19 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+.custom-badge{
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
 .badge-pending {
-    background-color: #ffc107;
-    color: #fff;
+    background-color: #ffc10731;
+    color: #ffa807;
     padding: 5px 10px;
-    border-radius: 5px;
+}
+
+.grid-repartidores-table .grid-header,
+.grid-repartidores-table .grid-row {
+    grid-template-columns: repeat(6, 1fr);
 }

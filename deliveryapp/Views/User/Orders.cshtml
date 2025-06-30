@@ -3,44 +3,80 @@
 }
 
 @model deliveryapp.ViewModels.OrdersVM
-
-<div class="grid-table grid-user-orders-table">
-    <div class="grid-header-two">
-        <div class="grid-cell">Restaurant</div>
-        <div class="grid-cell">Fecha</div>
-        <div class="grid-cell">Dirección</div>
-        <div class="grid-cell">Precio Total</div>
-        <div class="grid-cell">Estado</div>
+<section class="order-user-section">
+    <div class="section-title">
+        <h2>Tus Ordenes</h2>
     </div>
+    <div class="d-flex">
+        <div class="oders-list">
+            <h3>Historial de ordenes</h3>
+            @if (Model?.Orders != null && Model.Orders.Any())
+            {
+                @foreach (var item in Model.Orders)
+                {
+                    <a class="order-list-item" asp-controller="Order" asp-action="ShowOrderItem" asp-route-id="@item.Id">
+                        <div class="order-uuid-status-container d-flex justify-content-between">
+                            <div class="order-uuid fw-bold">#@item.Id</div>
+                            @if (item.Status == "Pendiente")
+                            {
+                                <div class=""><span class="custom-badge badge-pending">@item.Status</span></div>
+                            }
+                            else if (item.Status == "Completado")
+                            {
+                                <div class=""><span class="custom-badge badge-success">@item.Status</span></div>
+                            }
+                            else if (item.Status == "Cancelado")
+                            {
+                                <div class=""><span class="custom-badge badge-canceled">@item.Status</span></div>
+                            }
+                        </div>
+                        <div class="d-flex justify-content-between my-1">
+                            <div class="order-totalprice fw-bold">S/@item.TotalAmount</div>
+                            <div class="order-date text-secondary">@item.OrderDate</div>
+                        </div>
+                        <span class="items-amout text-secondary">@item.TotalItems items</span>
+                    </a>
 
-    @if (Model?.Orders != null && Model.Orders.Any())
-    {
-        @foreach (var item in Model.Orders)
-        {
-            <div class="grid-row-two">
-                <div class="grid-cell">@item.Restaurant?.Name</div>
-                <div class="grid-cell">@item.OrderDate</div>
-                <div class="grid-cell">@item.DeliveryAddress</div>
-                <div class="grid-cell">S/@item.TotalAmount</div>
-                @if (item.Status == "Pendiente")
-                {
-                    <div class="grid-cell"><span class="badge text-black  badge-pending">@item.Status</span></div>
+
                 }
-                else if (item.Status == "Completado")
-                {
-                    <div class="grid-cell"><span class="badge text-black badge-success">@item.Status</span></div>
-                }
-                else if (item.Status == "Cancelado")
-                {
-                    <div class="grid-cell"><span class="badge text-black badge-canceled">@item.Status</span></div>
-                }     
-            </div>
-        }
-    }
-    else
-    {
-        <div class="grid-row-two">
-            <div class="grid-cell" colspan="5">No orders found.</div>
+            }else
+            {
+
+                <div>No orders found.</div>
+
+            }
         </div>
-    }
-</div>
+        <div class="order-items-list">
+           
+            @if (Model?.OrderItems != null && Model.OrderItems.Any())
+            {
+                <div class="order-items-list-title">
+
+                    <h3>Orden #@Model.OrderItems.First().OrderId<span class="text-secondary">(@Model.OrderItems.Sum(o=>o.Quantity))</span></h3>
+
+                </div>
+                foreach (var item in Model.OrderItems){
+                    <div class="orderitem-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img src="@item.Product.ImageUrl" alt="Alternate Text" />
+                            <div class="orderitem-details  mx-2">
+                                <div class="title fw-bold h5">@item.Product.Name</div>
+                                <div class="description">@item.Product.Description</div>
+                                <div class="text-secondary">@(item.Quantity) item</div>
+                            </div>
+                        </div>
+                        <div class="fw-bold h6">S/@item.Price</div>
+                       
+                    </div>
+                }
+
+            }else{
+                <div class="empty-order-items-list">
+                    <h3>Selecciona una orden para ver los detalles</h3>
+                </div>
+            }
+        </div>
+    </div>
+    
+</section>
+
