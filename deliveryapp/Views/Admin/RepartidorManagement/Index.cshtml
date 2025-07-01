@@ -105,6 +105,29 @@
             $('#overlay, #formModal').fadeOut()
 
         });
+
+          $(document).on('submit', '#repartidorForm', function (e) {
+            e.preventDefault();
+            var $form = $(this);
+            var formData = new FormData(this);
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if (result.success) {
+                        // Close modal and redirect
+                        $('#overlay, #formModal').fadeOut();
+                        window.location.href = result.redirectUrl;
+                    } else {
+                        // Show validation errors
+                        $('#formContent').html(result);
+                    }
+                }
+            });
+        });
     </script>
 
 }

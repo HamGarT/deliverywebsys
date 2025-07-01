@@ -3,12 +3,164 @@
   "WorkspaceRootPath": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\ordermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\ordermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\ordermanagement\\_orderstatusform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\ordermanagement\\_orderstatusform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701212653_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250701212653_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\ordermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\ordermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\productmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\productmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\repartidormanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\repartidormanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\ordersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\ordersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\user\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\user\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701205218_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250701205218_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\repartidormanagement\\_repartidorform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\repartidormanagement\\_repartidorform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\restaurantmanagement\\_restaurantform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\restaurantmanagement\\_restaurantform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\restaurantmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\restaurantmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\repartidorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\repartidorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\restaurantmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\restaurantmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\productcreationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\productcreationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\restaurantvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\restaurantvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\repartidormanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\repartidormanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\restaurantmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\restaurantmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\deliveryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\deliveryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\access.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\access.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\cards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\cards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\forms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\forms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,76 +171,12 @@
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\user\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\ordermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\ordermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\ordermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\ordermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\restaurantmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\restaurantmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\productmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\productmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\ordermanagement\\_orderstatusform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\ordermanagement\\_orderstatusform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\repartidormanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\repartidormanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\home\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\home\\_productcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\restaurantmanagement\\_restaurantform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\restaurantmanagement\\_restaurantform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\repartidormanagement\\_repartidorform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\repartidormanagement\\_repartidorform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\repartidormanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\repartidormanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\productmanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\productmanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\admin\\restaurantmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\admin\\restaurantmanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\ordersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\ordersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -119,40 +207,12 @@
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\repartidor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\repartidorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\repartidorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\restaurantvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\restaurantvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\user\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\user\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630080417_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250630080417_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -183,22 +243,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250630054610_m4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\controllers\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\controllers\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\cards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\cards.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\forms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\forms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\access.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\css\\access.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -207,20 +251,12 @@
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\restaurantmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\restaurantmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\access\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -267,28 +303,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250626200241_m2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\js\\adminsidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\wwwroot\\js\\adminsidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\viewmodels\\productcreationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\viewmodels\\productcreationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\services\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\deliveryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\deliveryapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\views\\access\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -297,10 +313,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250609063333_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deliveryapp\\Migrations\\20250609063333_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|c:\\users\\hamer\\documents\\repos\\deliveryapp\\deliveryapp\\migrations\\20250630080707_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B532BFA-0383-4A0C-BE06-1D1DFA5FBEB7}|deliveryapp\\deliveryapp.csproj|solutionrelative:deliveryapp\\migrations\\20250630080707_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -310,11 +322,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 53,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 46,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\site.css",
@@ -323,51 +335,101 @@
               "ViewState": "AgIAAOsAAAAAAAAAAAAAAEwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-03T23:13:51.313Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250701212653_m1.cs",
+              "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701212653_m1.cs",
+              "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250701212653_m1.cs",
+              "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701212653_m1.cs",
+              "RelativeToolTip": "deliveryapp\\Migrations\\20250701212653_m1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T21:26:53.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
+              "Title": "20250701205218_m2.cs",
+              "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701205218_m2.cs",
+              "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250701205218_m2.cs",
+              "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250701205218_m2.cs",
+              "RelativeToolTip": "deliveryapp\\Migrations\\20250701205218_m2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T20:52:18.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Bitmap [720x717, 24 bits, JPG]",
+              "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg",
+              "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg",
+              "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Bitmap [720x717, 24 bits, JPG]",
+              "RelativeToolTip": "deliveryapp\\wwwroot\\images\\repartidores\\91fcd6f5-a053-43cc-8c54-c7d15713b493.jpg -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Bitmap [720x717, 24 bits, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-07-01T19:15:32.23Z",
+              "EditorCaption": " -  [Espa\u00F1ol (Espa\u00F1a, alfabetizaci\u00F3n internacional)] - Bitmap [720x717, 24 bits, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "deliveryapp\\ViewModels\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:44:08.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_OrderStatusForm.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\OrderManagement\\_OrderStatusForm.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\OrderManagement\\_OrderStatusForm.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\OrderManagement\\_OrderStatusForm.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\OrderManagement\\_OrderStatusForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-01T06:05:17.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 19,
               "Title": "RepartidorVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RepartidorVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\RepartidorVM.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RepartidorVM.cs",
               "RelativeToolTip": "deliveryapp\\ViewModels\\RepartidorVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T08:14:41.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "_RepartidorForm.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RepartidorManagement\\_RepartidorForm.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\RepartidorManagement\\_RepartidorForm.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RepartidorManagement\\_RepartidorForm.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\RepartidorManagement\\_RepartidorForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-01T07:39:50.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 51,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\User\\Profile\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\User\\Profile\\Index.cshtml",
@@ -375,24 +437,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\User\\Profile\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T07:34:03.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T07:34:03.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "20250630080707_m1.cs",
-              "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630080707_m1.cs",
-              "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250630080707_m1.cs",
-              "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630080707_m1.cs",
-              "RelativeToolTip": "deliveryapp\\Migrations\\20250630080707_m1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T08:07:07.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 52,
               "Title": "20250630080417_m2.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630080417_m2.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250630080417_m2.cs",
@@ -404,33 +453,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "RepartidorManagementController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\RepartidorManagementController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\Admin\\RepartidorManagementController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\RepartidorManagementController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\Admin\\RepartidorManagementController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwGEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T07:54:31.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RepartidorManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\RepartidorManagement\\Index.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RepartidorManagement\\Index.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\RepartidorManagement\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAkwHQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-30T07:53:15.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 53,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\_ViewImports.cshtml",
@@ -442,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 54,
               "Title": "20250630061730_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630061730_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250630061730_m1.cs",
@@ -454,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 59,
               "Title": "20250630054610_m4.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250630054610_m4.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250630054610_m4.cs",
@@ -466,33 +515,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\OrderManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\OrderManagement\\Index.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\OrderManagement\\Index.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\OrderManagement\\Index.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwCgAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-30T02:38:47.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "OrderManagementController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\OrderManagementController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\Admin\\OrderManagementController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\OrderManagementController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\Admin\\OrderManagementController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDUAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T02:38:03.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 47,
               "Title": "tables.custom.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\tables.custom.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\tables.custom.css",
@@ -500,25 +549,24 @@
               "RelativeToolTip": "deliveryapp\\wwwroot\\css\\tables.custom.css",
               "ViewState": "AgIAAFsAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-29T06:48:57.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T06:48:57.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 7,
               "Title": "OrdersVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\OrdersVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\OrdersVM.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\OrdersVM.cs",
               "RelativeToolTip": "deliveryapp\\ViewModels\\OrdersVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T06:13:18.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 20,
               "Title": "RestaurantMenuVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RestaurantMenuVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\RestaurantMenuVM.cs",
@@ -526,11 +574,12 @@
               "RelativeToolTip": "deliveryapp\\ViewModels\\RestaurantMenuVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T06:41:52.184Z"
+              "WhenOpened": "2025-06-16T06:41:52.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 50,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -538,12 +587,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T02:20:49.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T02:20:49.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 65,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Access\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Access\\AccessDenied.cshtml",
@@ -555,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 44,
               "Title": "_UserLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Shared\\_UserLayout.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Shared\\_UserLayout.cshtml",
@@ -563,12 +611,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\Shared\\_UserLayout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-28T06:25:09.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T06:25:09.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 41,
               "Title": "Orders.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\User\\Orders.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\User\\Orders.cshtml",
@@ -576,12 +623,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\User\\Orders.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-28T06:01:02.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T06:01:02.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 67,
               "Title": "20250627201623_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250627201623_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250627201623_m1.cs",
@@ -593,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 68,
               "Title": "20250627201352_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250627201352_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250627201352_m1.cs",
@@ -605,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 69,
               "Title": "20250627201311_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250627201311_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250627201311_m1.cs",
@@ -617,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 70,
               "Title": "20250627185747_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250627185747_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250627185747_m1.cs",
@@ -629,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 24,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Usuario.cs",
@@ -637,11 +683,12 @@
               "RelativeToolTip": "deliveryapp\\Models\\Usuario.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T18:56:27.124Z"
+              "WhenOpened": "2025-06-27T18:56:27.124Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 71,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Roles.cs",
@@ -653,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 73,
               "Title": "20250627184443_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250627184443_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250627184443_m1.cs",
@@ -665,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 74,
               "Title": "20250626200241_m2.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250626200241_m2.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250626200241_m2.cs",
@@ -677,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 14,
               "Title": "Repartidor.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Repartidor.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Repartidor.cs",
@@ -690,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 72,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\ErrorViewModel.cs",
@@ -702,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 57,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\CartItem.cs",
@@ -714,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 63,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Cart.cs",
@@ -726,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 58,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Services\\ProductService.cs",
@@ -738,19 +785,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 11,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\OrderItem.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\OrderItem.cs",
               "RelativeToolTip": "deliveryapp\\Models\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:40:13.224Z"
+              "WhenOpened": "2025-06-25T06:40:13.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 75,
               "Title": "adminsidebar.js",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\js\\adminsidebar.js",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\js\\adminsidebar.js",
@@ -762,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 56,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\js\\site.js",
@@ -774,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 61,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\Contact.cshtml",
@@ -786,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 49,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Shared\\_Layout.cshtml",
@@ -794,37 +842,37 @@
               "RelativeToolTip": "deliveryapp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T22:30:53.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T22:30:53.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 37,
               "Title": "cards.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\cards.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\cards.css",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\cards.css",
               "RelativeToolTip": "deliveryapp\\wwwroot\\css\\cards.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-24T22:29:01.525Z"
+              "WhenOpened": "2025-06-24T22:29:01.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "admin.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\admin.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\admin.css",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\admin.css",
               "RelativeToolTip": "deliveryapp\\wwwroot\\css\\admin.css",
-              "ViewState": "AgIAAB8BAAAAAAAAAAAAADABAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAADABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-24T22:28:22.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 42,
               "Title": "_ProductCard.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\_ProductCard.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\_ProductCard.cshtml",
@@ -832,12 +880,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\Home\\_ProductCard.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-24T22:20:24.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T22:20:24.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 31,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Services\\ImageService.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Services\\ImageService.cs",
@@ -845,11 +892,12 @@
               "RelativeToolTip": "deliveryapp\\Services\\ImageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:50:39.654Z"
+              "WhenOpened": "2025-06-22T00:50:39.654Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 32,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Services\\IImageService.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Services\\IImageService.cs",
@@ -857,11 +905,12 @@
               "RelativeToolTip": "deliveryapp\\Services\\IImageService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T00:49:50.459Z"
+              "WhenOpened": "2025-06-22T00:49:50.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 33,
               "Title": "deliveryapp.csproj",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\deliveryapp.csproj",
               "RelativeDocumentMoniker": "deliveryapp\\deliveryapp.csproj",
@@ -869,50 +918,51 @@
               "RelativeToolTip": "deliveryapp\\deliveryapp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-22T00:49:18.052Z"
+              "WhenOpened": "2025-06-22T00:49:18.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RestaurantManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\RestaurantManagement\\Index.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RestaurantManagement\\Index.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\RestaurantManagement\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwBAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-21T23:39:50.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "_RestaurantForm.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RestaurantManagement\\_RestaurantForm.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\RestaurantManagement\\_RestaurantForm.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\RestaurantManagement\\_RestaurantForm.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\RestaurantManagement\\_RestaurantForm.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-21T23:33:40.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 27,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Editar.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\ProductManagement\\Editar.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Editar.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\ProductManagement\\Editar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAB3AAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-20T17:46:28.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 55,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\Privacy.cshtml",
@@ -924,45 +974,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Product.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Product.cs",
               "RelativeToolTip": "deliveryapp\\Models\\Product.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T06:00:34.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Order.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Order.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Order.cs",
               "RelativeToolTip": "deliveryapp\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T03:42:06.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "AppDBContext.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Data\\AppDBContext.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Data\\AppDBContext.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Data\\AppDBContext.cs",
               "RelativeToolTip": "deliveryapp\\Data\\AppDBContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAmwBYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T03:36:45.298Z"
+              "WhenOpened": "2025-06-17T03:36:45.298Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 40,
               "Title": "Menu.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\Menu.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\Menu.cshtml",
@@ -970,37 +1021,37 @@
               "RelativeToolTip": "deliveryapp\\Views\\Home\\Menu.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T18:11:28.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T18:11:28.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAApwHAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAIAwwHYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T18:03:59.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 21,
               "Title": "ProductCreationVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\ProductCreationVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\ProductCreationVM.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\ProductCreationVM.cs",
               "RelativeToolTip": "deliveryapp\\ViewModels\\ProductCreationVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T09:47:56.632Z"
+              "WhenOpened": "2025-06-10T09:47:56.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 60,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Program.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Program.cs",
@@ -1012,46 +1063,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "ProductManagementController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\ProductManagementController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\Admin\\ProductManagementController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\ProductManagementController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\Admin\\ProductManagementController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAmwAsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T07:39:36.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Create.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\ProductManagement\\Create.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Create.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\ProductManagement\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-10T07:30:46.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\ProductManagement\\Index.cshtml",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\ProductManagement\\Index.cshtml",
               "RelativeToolTip": "deliveryapp\\Views\\Admin\\ProductManagement\\Index.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwGkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-10T07:29:47.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 62,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\Index.cshtml",
@@ -1063,20 +1114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\User\\OrderController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\User\\OrderController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\User\\OrderController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\User\\OrderController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADUAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T05:28:10.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 77,
               "Title": "20250609063333_m1.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Migrations\\20250609063333_m1.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Migrations\\20250609063333_m1.cs",
@@ -1088,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 22,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\RegisterVM.cs",
@@ -1096,11 +1147,12 @@
               "RelativeToolTip": "deliveryapp\\ViewModels\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:09:55.303Z"
+              "WhenOpened": "2025-06-09T06:09:55.303Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 30,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\DashboardController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\Admin\\DashboardController.cs",
@@ -1108,11 +1160,12 @@
               "RelativeToolTip": "deliveryapp\\Controllers\\Admin\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:29:34.354Z"
+              "WhenOpened": "2025-06-09T05:29:34.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 43,
               "Title": "AccessController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\AccessController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\AccessController.cs",
@@ -1120,25 +1173,24 @@
               "RelativeToolTip": "deliveryapp\\Controllers\\AccessController.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAcwFcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:28:11.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T05:28:11.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 23,
               "Title": "RestaurantVM.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RestaurantVM.cs",
               "RelativeDocumentMoniker": "deliveryapp\\ViewModels\\RestaurantVM.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\ViewModels\\RestaurantVM.cs",
               "RelativeToolTip": "deliveryapp\\ViewModels\\RestaurantVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T05:27:28.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 64,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Access\\Register.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Access\\Register.cshtml",
@@ -1150,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 76,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Access\\Login.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Access\\Login.cshtml",
@@ -1162,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 48,
               "Title": "Service.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Home\\Service.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Home\\Service.cshtml",
@@ -1170,12 +1222,11 @@
               "RelativeToolTip": "deliveryapp\\Views\\Home\\Service.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-09T05:20:51.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T05:20:51.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 38,
               "Title": "forms.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\forms.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\forms.css",
@@ -1183,23 +1234,25 @@
               "RelativeToolTip": "deliveryapp\\wwwroot\\css\\forms.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-09T05:17:05.691Z"
+              "WhenOpened": "2025-06-09T05:17:05.691Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 36,
               "Title": "access.css",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\access.css",
               "RelativeDocumentMoniker": "deliveryapp\\wwwroot\\css\\access.css",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\wwwroot\\css\\access.css",
               "RelativeToolTip": "deliveryapp\\wwwroot\\css\\access.css",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAByAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-09T05:17:03.015Z"
+              "WhenOpened": "2025-06-09T05:17:03.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 66,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Admin\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Admin\\Dashboard\\Index.cshtml",
@@ -1211,20 +1264,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 29,
               "Title": "RestaurantManagementController.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\RestaurantManagementController.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Controllers\\Admin\\RestaurantManagementController.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Controllers\\Admin\\RestaurantManagementController.cs",
               "RelativeToolTip": "deliveryapp\\Controllers\\Admin\\RestaurantManagementController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowIwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAIwJIAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T20:50:43.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 45,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "deliveryapp\\Views\\Shared\\_AdminLayout.cshtml",
@@ -1232,20 +1285,20 @@
               "RelativeToolTip": "deliveryapp\\Views\\Shared\\_AdminLayout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T20:48:27.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T20:48:27.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 9,
               "Title": "Restaurant.cs",
               "DocumentMoniker": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Restaurant.cs",
               "RelativeDocumentMoniker": "deliveryapp\\Models\\Restaurant.cs",
               "ToolTip": "C:\\Users\\Hamer\\Documents\\repos\\deliveryapp\\deliveryapp\\Models\\Restaurant.cs",
               "RelativeToolTip": "deliveryapp\\Models\\Restaurant.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T18:02:27.322Z"
+              "WhenOpened": "2025-06-06T18:02:27.322Z",
+              "EditorCaption": ""
             }
           ]
         },

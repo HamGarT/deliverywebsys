@@ -6,36 +6,38 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 namespace deliveryapp.Controllers.Admin
 {
     [Route("Admin/[controller]")]
     public class ProductManagementController : Controller
     {
-        private readonly AppDBContext  _dbContext;
+        private readonly AppDBContext _dbContext;
         private readonly IImageService _imageService;
 
         public ProductManagementController(
             AppDBContext dbContext,
-            IImageService imageService) 
-        { 
+            IImageService imageService)
+        {
             _dbContext = dbContext;
             _imageService = imageService;
-            
+
         }
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            List<Product> products = await _dbContext.Products.Include(u=> u.Restaurant).ToListAsync();
+            List<Product> products = await _dbContext.Products.Include(u => u.Restaurant).ToListAsync();
             return View("~/Views/Admin/ProductManagement/Index.cshtml", products);
         }
 
         [HttpGet("Create")]
-        public async Task<IActionResult> Create() {
+        public async Task<IActionResult> Create()
+        {
             List<Restaurant> restaurants = await _dbContext.Restaurants.ToListAsync();
             ProductCreationVM productVM = new ProductCreationVM
             {
-                Restaurants    = restaurants,
+                Restaurants = restaurants,
             };
             return PartialView("~/Views/Admin/ProductManagement/Create.cshtml", productVM);
         }
@@ -43,6 +45,36 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Create")]
         public async Task<IActionResult> Create(ProductCreationVM productCreationVM)
         {
+            //if (!ModelState.IsValid)
+            //{
+            //    Console.WriteLine("=== VALIDATION ERRORS ===");
+            //    foreach (var modelState in ModelState)
+            //    {
+            //        if (modelState.Value.Errors.Count > 0)
+            //        {
+            //            Console.WriteLine($"Field: {modelState.Key}");
+            //            foreach (var error in modelState.Value.Errors)
+            //            {
+            //                Console.WriteLine($"  Error: {error.ErrorMessage}");
+            //                if (error.Exception != null)
+            //                {
+            //                    Console.WriteLine($"  Exception: {error.Exception.Message}");
+            //                }
+            //            }
+            //        }
+            //    }
+            //    Console.WriteLine("=== END VALIDATION ERRORS ===");
+
+            //    List<Restaurant> restaurants = await _dbContext.Restaurants.ToListAsync();
+            //    productCreationVM.Restaurants = restaurants;
+            //    return PartialView("~/Views/Admin/ProductManagement/Create.cshtml", productCreationVM);
+            //}
+            if (!ModelState.IsValid)
+            {
+                List<Restaurant> restaurants = await _dbContext.Restaurants.ToListAsync();
+                productCreationVM.Restaurants = restaurants;
+                return PartialView("~/Views/Admin/ProductManagement/Create.cshtml", productCreationVM);
+            }
             string imagePath = string.Empty;
 
 
@@ -66,7 +98,9 @@ namespace deliveryapp.Controllers.Admin
 
             _dbContext.Products.Add(product);
             await _dbContext.SaveChangesAsync();
-            return RedirectToAction("Index", "ProductManagement");
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "ProductManagement") });
+            //return RedirectToAction("Index", "ProductManagement");
+
         }
 
 
@@ -86,6 +120,12 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Editar")]
         public async Task<IActionResult> Editar(ProductCreationVM productCreationVM)
         {
+            if (!ModelState.IsValid)
+            {
+                List<Restaurant> restaurants = await _dbContext.Restaurants.ToListAsync();
+                productCreationVM.Restaurants = restaurants;
+                return PartialView("~/Views/Admin/ProductManagement/Editar.cshtml", productCreationVM);
+            }
             Product product = await _dbContext.Products.FirstOrDefaultAsync(u => u.Id == productCreationVM.Product.Id);
             if (product == null)
             {
@@ -109,8 +149,8 @@ namespace deliveryapp.Controllers.Admin
 
             _dbContext.Products.Update(product);
             await _dbContext.SaveChangesAsync();
-            
-            return RedirectToAction("Index", "ProductManagement");
+
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "ProductManagement") });
         }
 
         [HttpGet("Delete/{id}")]
@@ -129,6 +169,6 @@ namespace deliveryapp.Controllers.Admin
             }
             return RedirectToAction("Index", "ProductManagement");
 
-        }    
+        }
     }
 }

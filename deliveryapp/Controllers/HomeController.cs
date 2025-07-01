@@ -87,6 +87,14 @@ namespace deliveryapp.Controllers
                 return RedirectToAction("Login", "Access");
             }
            
+            List<Repartidor> repartidores = await _context.Repartidor.Where(o=>o.status == "Disponible").ToListAsync();
+
+            if(repartidores.Count == 0)
+            {
+                ViewData["Mensaje"] = "No hay repartidores disponibles en este momento. Por favor, intente más tarde.";
+                return RedirectToAction("Service", "Home");
+            }
+
             Order order = new Order
             {
                 UserId = int.Parse(userIdClaim), 
@@ -95,10 +103,18 @@ namespace deliveryapp.Controllers
                 Status = "Pendiente",
                 TotalAmount = _productService.GetTotalAmount(),
                 DeliveryAddress= "123 Main St",
-                TotalItems = _productService.GetTotalItems()
+                TotalItems = _productService.GetTotalItems(),
+                RepartidorId = repartidores[0].Id
             };
             await _context.Orders.AddAsync(order);
             await _context.SaveChangesAsync();
+
+            Repartidor repartidor = await _context.Repartidor.FindAsync(order.RepartidorId);
+            repartidor.status = "Ocupado";
+            _context.Repartidor.Update(repartidor);
+            await _context.SaveChangesAsync();
+
+
             foreach (var item in _productService.GetAll())
             {
                 OrderItem orderItem = new OrderItem

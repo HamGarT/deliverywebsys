@@ -12,7 +12,7 @@ using deliveryapp.Data;
 namespace deliveryapp.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20250630080707_m1")]
+    [Migration("20250701212653_m1")]
     partial class m1
     {
         /// <inheritdoc />
@@ -90,6 +90,9 @@ namespace deliveryapp.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("RepartidorId")
+                        .HasColumnType("int");
+
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
 
@@ -107,6 +110,8 @@ namespace deliveryapp.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RepartidorId");
 
                     b.HasIndex("RestaurantId");
 
@@ -160,12 +165,12 @@ namespace deliveryapp.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<decimal>("Price")
                         .HasPrecision(18, 2)
@@ -387,7 +392,6 @@ namespace deliveryapp.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -574,6 +578,12 @@ namespace deliveryapp.Migrations
 
             modelBuilder.Entity("deliveryapp.Models.Order", b =>
                 {
+                    b.HasOne("deliveryapp.Models.Repartidor", "Repartidor")
+                        .WithMany()
+                        .HasForeignKey("RepartidorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("deliveryapp.Models.Restaurant", "Restaurant")
                         .WithMany()
                         .HasForeignKey("RestaurantId")
@@ -585,6 +595,8 @@ namespace deliveryapp.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Repartidor");
 
                     b.Navigation("Restaurant");
 

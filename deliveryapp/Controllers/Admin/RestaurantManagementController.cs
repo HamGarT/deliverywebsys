@@ -42,6 +42,27 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Create")]
         public async Task<IActionResult> Create(RestaurantVM restaurantVM )
         {
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("=== VALIDATION ERRORS ===");
+                foreach (var modelState in ModelState)
+                {
+                    if (modelState.Value.Errors.Count > 0)
+                    {
+                        Console.WriteLine($"Field: {modelState.Key}");
+                        foreach (var error in modelState.Value.Errors)
+                        {
+                            Console.WriteLine($"  Error: {error.ErrorMessage}");
+                            if (error.Exception != null)
+                            {
+                                Console.WriteLine($"  Exception: {error.Exception.Message}");
+                            }
+                        }
+                    }
+                }
+                Console.WriteLine("=== END VALIDATION ERRORS ===");
+                return PartialView("~/Views/Admin/RestaurantManagement/_RestaurantForm.cshtml", restaurantVM);
+            }
             string imagePath = string.Empty;
 
             if (restaurantVM.ImageUpload != null && restaurantVM.ImageUpload.Length > 0)
@@ -68,7 +89,8 @@ namespace deliveryapp.Controllers.Admin
             await _context.SaveChangesAsync();
             List<Restaurant> restaurants = await _context.Restaurants.ToListAsync();
 
-            return RedirectToAction("Index", "RestaurantManagement");
+            //return RedirectToAction("Index", "RestaurantManagement");
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "RestaurantManagement") });
         }
 
         [HttpGet("Editar")]
@@ -91,6 +113,12 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Editar")]
         public async Task<IActionResult> Editar(RestaurantVM restaurantVM)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return PartialView("~/Views/Admin/RestaurantManagement/_RestaurantForm.cshtml", restaurantVM);
+            }
+
             string imagePath = string.Empty;
 
 
@@ -115,7 +143,8 @@ namespace deliveryapp.Controllers.Admin
             _context.Restaurants.Update(restaurant);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "RestaurantManagement");
+            //return RedirectToAction("Index", "RestaurantManagement");
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "RestaurantManagement") });
         }
 
         [HttpGet("Delete/{id}")]

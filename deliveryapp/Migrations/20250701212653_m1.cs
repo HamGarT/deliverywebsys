@@ -42,7 +42,7 @@ namespace deliveryapp.Migrations
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -69,10 +69,10 @@ namespace deliveryapp.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdRestaurant = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -137,16 +137,23 @@ namespace deliveryapp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    RestaurantId = table.Column<int>(type: "int", nullable: false),
                     OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     DeliveryAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TotalItems = table.Column<int>(type: "int", nullable: false)
+                    TotalItems = table.Column<int>(type: "int", nullable: false),
+                    RestaurantId = table.Column<int>(type: "int", nullable: false),
+                    RepartidorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Orders_Repartidor_RepartidorId",
+                        column: x => x.RepartidorId,
+                        principalTable: "Repartidor",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Orders_Restaurants_RestaurantId",
                         column: x => x.RestaurantId,
@@ -301,6 +308,11 @@ namespace deliveryapp.Migrations
                 column: "ProductId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Orders_RepartidorId",
+                table: "Orders",
+                column: "RepartidorId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Orders_RestaurantId",
                 table: "Orders",
                 column: "RestaurantId");
@@ -331,9 +343,6 @@ namespace deliveryapp.Migrations
                 name: "OrderItems");
 
             migrationBuilder.DropTable(
-                name: "Repartidor");
-
-            migrationBuilder.DropTable(
                 name: "Carts");
 
             migrationBuilder.DropTable(
@@ -341,6 +350,9 @@ namespace deliveryapp.Migrations
 
             migrationBuilder.DropTable(
                 name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Repartidor");
 
             migrationBuilder.DropTable(
                 name: "Users");

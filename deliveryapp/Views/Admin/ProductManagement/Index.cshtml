@@ -17,7 +17,7 @@
                 <div class="grid-cell">Precio</div>
                 <div class="grid-cell">Restaurant</div>
                 <div class="grid-cell">Action</div>
-               
+
             </div>
 
             @foreach (var item in Model)
@@ -27,7 +27,7 @@
                     <div class="grid-cell"><img src="@item.ImageUrl" alt="" srcset=""></div>
                     <div class="grid-cell">S/@item.Price</div>
                     <div class="grid-cell">@item.Restaurant.Name</div>
-                   
+
                     <div class="grid-cell">
                         <button class="btn-action-table btnEdit" data-id="@item.Id">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
                                 </g>
                             </svg>
                         </a>
-                        
+
                     </div>
                 </div>
             }
@@ -75,7 +75,7 @@
                 $('#overlay, #formModal').fadeIn();
             });
         });
-        
+
         $('.btnEdit').click(function () {
             var id = $(this).data('id') || $(this).attr('data-id');
             $.get('/Admin/ProductManagement/Editar?id=' + id, function (data) {
@@ -84,17 +84,36 @@
             });
         });
 
+         $('#btnClose, #overlay').click(function(){
+            $('#overlay, #formModal').fadeOut()
 
-        // $('.btnEdit').click(function () {
-        //     var id = $(this).data('id') || $(this).attr('data-id');
-        //     $.get('@Url.Action("Editar", "ProductManagement")',{ id: id }, function (data) {
-        //         $('#formContent').html(data);
-        //         $('#overlay, #formModal').fadeIn();
-        //     });
-        // });
-
-        $('#btnClose, #overlay').click(function () {
-            $('#overlay, #formModal').fadeOut();
         });
+
+
+        $(document).on('submit', '#createProductForm', function (e) {
+            e.preventDefault();
+            var $form = $(this);
+            var formData = new FormData(this);
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if (result.success) {
+                        // Close modal and redirect
+                        $('#overlay, #formModal').fadeOut();
+                        window.location.href = result.redirectUrl;
+                    } else {
+                        // Show validation errors
+                        $('#formContent').html(result);
+                    }
+                }
+            });
+        });
+
+
+
     </script>
 }

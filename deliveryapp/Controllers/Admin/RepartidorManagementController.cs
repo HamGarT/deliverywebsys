@@ -32,6 +32,28 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Create")]
         public async Task<IActionResult> Create(RepartidorVM repartidorVM)
         {
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("=== VALIDATION ERRORS ===");
+                foreach (var modelState in ModelState)
+                {
+                    if (modelState.Value.Errors.Count > 0)
+                    {
+                        Console.WriteLine($"Field: {modelState.Key}");
+                        foreach (var error in modelState.Value.Errors)
+                        {
+                            Console.WriteLine($"  Error: {error.ErrorMessage}");
+                            if (error.Exception != null)
+                            {
+                                Console.WriteLine($"  Exception: {error.Exception.Message}");
+                            }
+                        }
+                    }
+                }
+                Console.WriteLine("=== END VALIDATION ERRORS ===");
+                return PartialView("~/Views/Admin/RepartidorManagement/_RepartidorForm.cshtml", repartidorVM);
+            }
+
             string imagePath = string.Empty;
 
 
@@ -56,7 +78,8 @@ namespace deliveryapp.Controllers.Admin
             await _context.AddAsync(repartidor);
             await _context.SaveChangesAsync();
             List<Repartidor> repartidores = await _context.Repartidor.ToListAsync();
-            return RedirectToAction("Index", "RepartidorManagement");
+            //return RedirectToAction("Index", "RepartidorManagement");
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "RepartidorManagement") });
         }
 
 
@@ -81,6 +104,10 @@ namespace deliveryapp.Controllers.Admin
         [HttpPost("Editar")]
         public async Task<IActionResult> Editar(RepartidorVM repartidorVM)
         {
+            if (!ModelState.IsValid)
+            {
+                return PartialView("~/Views/Admin/RepartidorManagement/_RepartidorForm.cshtml", repartidorVM);
+            }
             string imagePath = string.Empty;
 
 
@@ -107,7 +134,7 @@ namespace deliveryapp.Controllers.Admin
             _context.Repartidor.Update(repartidor);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Index", "RepartidorManagement");
+            return Json(new { success = true, redirectUrl = Url.Action("Index", "RepartidorManagement") });
         }
 
         [HttpGet("Delete/{id}")]

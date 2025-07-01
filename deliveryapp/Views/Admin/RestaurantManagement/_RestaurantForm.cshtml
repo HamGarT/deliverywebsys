@@ -5,14 +5,14 @@
     var formAction = isEdit ? "Editar" : "Create";
 }
 
-<div id="createRestaurantForm" class="container">
+<div class="container">
     <div class="form-container">
         <div class="form-header">
             <h2 class="text-center">Restaurante</h2>
             <p class="text-muted text-center">Llenar todos los detalles</p>
         </div>
 
-        <form id="modernForm" asp-controller="RestaurantManagement" asp-action="@formAction" method="post" enctype="multipart/form-data">
+        <form id="createRestaurantForm" asp-controller="RestaurantManagement" asp-action="@formAction" method="post" enctype="multipart/form-data">
             @* @Html.AntiForgeryToken() *@
             @if (isEdit)
             {
@@ -25,6 +25,7 @@
                         <span class="input-group-text"><i class="bi bi-person"></i></span>
                         <input type="text" class="form-control" id="name" placeholder="Ingresar nombre de restaurante" required asp-for="Name">
                     </div>
+                    <span asp-validation-for="Name" class="text-danger fst-italic"></span>
                 </div>
             </div>
 
@@ -33,6 +34,7 @@
                     <label for="description" class="form-label">Descripción</label>
                     <textarea class="form-control" id="description" rows="3" placeholder="Ingresar descripción" asp-for="Description"></textarea>
                 </div>
+                <span asp-validation-for="Description" class="text-danger fst-italic"></span>
             </div>
 
             <div class="row mb-4">
@@ -42,6 +44,7 @@
                         <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
                         <input type="text" class="form-control" id="address" placeholder="Ingresar dirección completa" asp-for="Address">
                     </div>
+                    <span asp-validation-for="Address" class="text-danger fst-italic"></span>
                 </div>
             </div>
 
@@ -52,6 +55,7 @@
                         <span class="input-group-text"><i class="bi bi-telephone"></i></span>
                         <input type="tel" class="form-control" id="phoneNumber" placeholder="Ingresar numero de teléfono" asp-for="PhoneNumber">
                     </div>
+                    <span asp-validation-for="PhoneNumber" class="text-danger fst-italic"></span>
                 </div>
 
                 <div class="col-md-6">
@@ -60,6 +64,7 @@
                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                         <input type="email" class="form-control" id="email" placeholder="Dirección de correo electrónico" required asp-for="Email">
                     </div>
+                    <span asp-validation-for="Email" class="text-danger fst-italic"></span>
                 </div>
             </div>
 
@@ -68,7 +73,7 @@
                     <label for="imageUpload" class="form-label">Imagen</label>
                     <div class="mt-2">
                         <span class="text-muted small">Upload an image:</span>
-                        <input class="form-control" type="file" id="imageUpload" accept=".jpg,.jpeg,.png,.gif,.webp" asp-for="ImageUpload">
+                        <input class="form-control"  type="file" id="imageUpload" accept=".jpg,.jpeg,.png,.gif,.webp" asp-for="ImageUpload">
                     </div>
                 </div>
             </div>

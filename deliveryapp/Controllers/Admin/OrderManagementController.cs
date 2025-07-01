@@ -21,6 +21,7 @@ namespace deliveryapp.Controllers.Admin
             List<Order> orders = _context.Orders
                 .Include(o => o.Restaurant)
                 .Include(o=> o.User)
+                .Include(o => o.Repartidor)
                 .ToList();
 
             OrdersVM orderViewModel = new OrdersVM
@@ -38,6 +39,7 @@ namespace deliveryapp.Controllers.Admin
             List<Order> orders = _context.Orders
                .Include(o => o.Restaurant)
                .Include(o => o.User)
+               .Include(o => o.Repartidor)
                .ToList();
             List<OrderItem> orderItems = await _context.OrderItems.Where(o => o.OrderId == id).Include(o => o.Product).ToListAsync();
             OrdersVM orderViewModel = new OrdersVM
@@ -59,8 +61,11 @@ namespace deliveryapp.Controllers.Admin
         public async Task<IActionResult> Editar(int id, string status)
         {
             Order? order = await _context.Orders.FindAsync(id);
+            Repartidor? repartidor = await _context.Repartidor.FindAsync(order.RepartidorId);
             order.Status = status;
+            repartidor.status = "Disponible"; 
             _context.Orders.Update(order);
+            _context.Repartidor.Update(repartidor);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "OrderManagement");
         }

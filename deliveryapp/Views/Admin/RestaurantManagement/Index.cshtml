@@ -4,7 +4,7 @@
 @model List<deliveryapp.Models.Restaurant>
 <section>
     <div class="section-title">
-        <h2>Restaurants</h2>
+        <h2>Restaurantes</h2>
     </div>
     
     <div class="Restaurants-table table-container">
@@ -90,6 +90,30 @@
         });
         $('#btnClose, #overlay').click(function () {
             $('#overlay, #formModal').fadeOut();
+        });
+
+        //FUNCIONA, NO TOCAR >:(
+         $(document).on('submit', '#createRestaurantForm', function (e) {
+            e.preventDefault();
+            var $form = $(this);
+            var formData = new FormData(this);
+            $.ajax({
+                url: $form.attr('action'),
+                type: $form.attr('method'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    if (result.success) {
+                        // Close modal and redirect
+                        $('#overlay, #formModal').fadeOut();
+                        window.location.href = result.redirectUrl;
+                    } else {
+                        // Show validation errors
+                        $('#formContent').html(result);
+                    }
+                }
+            });
         });
     </script>
 }

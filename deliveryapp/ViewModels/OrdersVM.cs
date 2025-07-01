@@ -7,6 +7,6 @@ namespace deliveryapp.ViewModels
         public IEnumerable<Order> Orders { get; set; }
         public IEnumerable<OrderItem> OrderItems { get; set; }
        
-
+       
     }
 }
