@@ -11,6 +11,7 @@
 body {
     min-height: 100vh;
      font-family: "Host Grotesk", sans-serif;
+     background-color: #F6F6F6;
 }
 
 .sidebar {
@@ -297,6 +298,8 @@ body {
 }
 
 .btn-action-table svg{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
+
+

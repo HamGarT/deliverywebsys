@@ -35,13 +35,7 @@
         </div>
 
         <div class="order-items">
-            <div class="order-item">
-                <div class="item-info">
-                    <span class="item-quantity">1x</span>
-                    <span class="item-name">Crocante manzana</span>
-                </div>
-                <span class="item-price">S/12.9</span>
-            </div>
+           
             @if(Model.Cart != null) {
                  @foreach (var item in Model.Cart){
                 <div class="order-item">

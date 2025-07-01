@@ -1,54 +1,122 @@
-﻿
-@{
-}
-
-@{
+﻿@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 @model deliveryapp.ViewModels.OrdersVM
-<section>
+<section class="order-user-section">
     <div class="section-title">
-        <h2>Mis Ordenes</h2>
+        <h2>Ordenes</h2>
     </div>
-    <div class="grid-table grid-user-orders-table">
-        <div class="grid-header-two">
-            <div class="grid-cell">Restaurant</div>
-            <div class="grid-cell">Fecha</div>
-            <div class="grid-cell">Dirección</div>
-            <div class="grid-cell">Precio Total</div>
-            <div class="grid-cell">Estado</div>
-        </div>
-
-        @if (Model?.Orders != null && Model.Orders.Any())
-        {
-            @foreach (var item in Model.Orders)
+    <div class="d-flex">
+        <div class="oders-list">
+            <h3>Historial de ordenes</h3>
+            @if (Model?.Orders != null && Model.Orders.Any())
             {
-                <div class="grid-row-two">
-                    <div class="grid-cell">@item.Restaurant?.Name</div>
-                    <div class="grid-cell">@item.OrderDate</div>
-                    <div class="grid-cell">@item.DeliveryAddress</div>
-                    <div class="grid-cell">S/@item.TotalAmount</div>
-                    @if (item.Status == "Pendiente")
-                    {
-                        <div class="grid-cell"><span class="custom-badge badge-pending">@item.Status</span></div>
-                    }
-                    else if (item.Status == "Completado")
-                    {
-                        <div class="grid-cell"><span class="custom-badge badge-success">@item.Status</span></div>
-                    }
-                    else if (item.Status == "Cancelado")
-                    {
-                        <div class="grid-cell"><span class="custom-badge badge-canceled">@item.Status</span></div>
-                    }
+                @foreach (var item in Model.Orders)
+                {
+                    <div class="order-list-item">
+                        <a class="" asp-controller="OrderManagement" asp-action="ShowOrderItem" asp-route-id="@item.Id">
+                            <div class="order-uuid-status-container d-flex justify-content-between">
+                                <div class="order-uuid fw-bold">#@item.Id</div>
+                                @if (item.Status == "Pendiente")
+                                {
+                                    <div class=""><span class="custom-badge badge-pending">@item.Status</span></div>
+                                }
+                                else if (item.Status == "Entregado")
+                                {
+                                    <div class=""><span class="custom-badge badge-success">@item.Status</span></div>
+                                }
+                                else if (item.Status == "Cancelado")
+                                {
+                                    <div class=""><span class="custom-badge badge-canceled">@item.Status</span></div>
+                                }
+                            </div>
+                            <div class="d-flex justify-content-between my-1">
+                                <div class="order-totalprice fw-bold">S/@item.TotalAmount</div>
+                                <div class="order-date text-secondary">@item.OrderDate</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-1">
+                                <div class="fw-bold">@($"{item.User?.Names} {item.User?.LastNames}")</div>
+                                <div class="text-secondary">@item.User?.Email</div>
+                            </div>
+                        </a>
+                        <div class="d-flex justify-content-between align-items-center my-1">
+                            <span class="items-amout text-secondary">@item.TotalItems items</span>
+                            <button class="btnEdit btn-action-table" data-id="@item.Id">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M20.1498 7.93997L8.27978 19.81C7.21978 20.88 4.04977 21.3699 3.32977 20.6599C2.60977 19.9499 3.11978 16.78 4.17978 15.71L16.0498 3.84C16.5979 3.31801 17.3283 3.03097 18.0851 3.04019C18.842 3.04942 19.5652 3.35418 20.1004 3.88938C20.6356 4.42457 20.9403 5.14781 20.9496 5.90463C20.9588 6.66146 20.6718 7.39189 20.1498 7.93997V7.93997Z" stroke="#5c5c5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                }
+            }
+            else
+            {
+
+                <div>No orders found.</div>
+
+            }
+        </div>
+        <div class="order-items-list">
+
+            @if (Model?.OrderItems != null && Model.OrderItems.Any())
+            {
+                <div class="order-items-list-title">
+
+                    <h3>Orden #@Model.OrderItems.First().OrderId<span class="text-secondary">(@Model.OrderItems.Sum(o => o.Quantity))</span></h3>
+
+                </div>
+                foreach (var item in Model.OrderItems)
+                {
+                    <div class="orderitem-item d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img src="@item.Product.ImageUrl" alt="Alternate Text" />
+                            <div class="orderitem-details  mx-2">
+                                <div class="title fw-bold h5">@item.Product.Name</div>
+                                <div class="description">@item.Product.Description</div>
+                                <div class="text-secondary">@(item.Quantity) item</div>
+                            </div>
+                        </div>
+                        <div class="fw-bold h6">S/@item.Price</div>
+
+                    </div>
+                }
+
+            }
+            else
+            {
+                <div class="empty-order-items-list">
+                    <h3>Selecciona una orden para ver los detalles</h3>
                 </div>
             }
-        }
-        else
-        {
-            <div class="grid-row-two">
-                <div class="grid-cell" colspan="5">No orders found.</div>
-            </div>
-        }
+        </div>
+    </div>
+    <div id="overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+        background-color:rgba(0,0,0,0.5); z-index:1000;"></div>
+    <div id="formModal">
+        <button id="btnClose">X</button>
+        <div id="formContent"></div>
     </div>
 </section>
+
+@section Scripts {
+    <script>
+        $('.btnEdit').click(function () {
+            var id = $(this).data('id') || $(this).attr('data-id');
+            $.get('/Admin/OrderManagement/Editar?id=' + id, function (data) {
+                $('#formContent').html(data);
+                $('#overlay, #formModal').fadeIn();
+            });
+        });
+
+        $('#btnClose, #overlay').click(function () {
+            $('#overlay, #formModal').fadeOut();
+        });
+    </script>
+}

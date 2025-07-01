@@ -1,0 +1,37 @@
+﻿
+@{
+}
+@model deliveryapp.Models.Order
+
+<div id="createProductForm" class="container">
+    <div class="form-container">
+        <div class="form-header">
+            <h2 class="text-center">Orde #@Model.Id</h2>
+        </div>
+
+        <form id="modernForm" asp-controller="OrderManagement" asp-action="Editar" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="@Model.Id" />
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Estado de orden *</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <select class="form-control" name="status">
+                            <option selected disabled value="@Model.Status">@Model.Status</option>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Cancelado">Cancelado</option>
+                            <option value="Entregado">Entregado</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Aceptar
+                    </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -85,7 +85,7 @@ namespace deliveryapp.Controllers
             {
                 return RedirectToAction("Index", "Dashboard");
             }
-            return RedirectToAction("Index", "Profile");
+            return RedirectToAction("Index", "Order");
         }
 
       

@@ -1,4 +1,8 @@
-﻿.section-title, 
+﻿a{
+    text-decoration: none;
+    color: black;
+}
+.section-title, 
 .table-controls,
 .grid-table{
     width: 95%;
@@ -34,6 +38,7 @@
     margin: 10px 0;
     font-weight: 500;
     padding: 5px 0;
+    background-color: #ffff;
 }
 
     .grid-row:hover {
@@ -44,10 +49,12 @@
 .grid-header {
     font-weight: 700;
     border: none;
-    background-color: #F4F6F8;
+    background-color: #4e4e4e;
     padding: 15px 0;
     box-shadow: none;
-    color: #868686;
+    color: #ffffff;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .grid-cell {
@@ -97,7 +104,15 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
-.custom-badge{
+
+
+.grid-repartidores-table .grid-header,
+.grid-repartidores-table .grid-row {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+.custom-badge {
     border-radius: 40px;
     font-weight: 700;
     font-size: 15px;
@@ -106,10 +121,41 @@
 .badge-pending {
     background-color: #ffc10731;
     color: #ffa807;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+
+.badge-success{
+    background-color: #1b944a31;
+    color: #257446;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+
+.badge-canceled{
+    background-color: #942d1b31;
+    color: #dd2e3d;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+
+.badge-available {
+    background-color: #1b944a31;
+    color: #257446;
     padding: 5px 10px;
 }
 
-.grid-repartidores-table .grid-header,
-.grid-repartidores-table .grid-row {
-    grid-template-columns: repeat(6, 1fr);
+.badge-offline {
+    background-color: #55555531;
+    color: #353535;
+    padding: 5px 10px;
 }
+
+.badge-occupied {
+    background-color: #6e1b9431;
+    color: #5e2574;
+    padding: 5px 10px;
+}
+
+
+

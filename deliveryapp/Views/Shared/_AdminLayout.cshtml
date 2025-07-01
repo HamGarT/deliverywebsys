@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/tables.custom.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/forms.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.user.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -35,7 +36,7 @@
                 </a>
             </div>
             <div class="nav-item">
-                <a href="#" class="nav-link">
+                <a asp-controller="OrderManagement" asp-action="Index" class="nav-link">
                     <i class="fas fa-chart-bar"></i>
                     <span>Ordenes</span>
                 </a>

@@ -118,8 +118,8 @@ namespace deliveryapp.Controllers.Admin
             return RedirectToAction("Index", "RestaurantManagement");
         }
 
-        [HttpPost("Delete/{id}")]
-        [ValidateAntiForgeryToken]
+        [HttpGet("Delete/{id}")]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
             var restaurant = _context.Restaurants.Find(id);

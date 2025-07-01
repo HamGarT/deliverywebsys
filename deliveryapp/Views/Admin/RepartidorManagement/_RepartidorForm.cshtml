@@ -1,0 +1,99 @@
+﻿@model deliveryapp.ViewModels.RepartidorVM;
+
+@{
+    var isEdit = Model != null && Model.Id > 0;
+    var formAction = isEdit ? "Editar" : "Create";
+}
+
+<div id="createRestaurantForm" class="container">
+    <div class="form-container">
+        <div class="form-header">
+            <h2 class="text-center">Repartidor</h2>
+            <p class="text-muted text-center">Llenar todos los campos</p>
+        </div>
+
+        <form id="modernForm" asp-controller="RepartidorManagement" asp-action="@formAction" method="post" enctype="multipart/form-data">
+           
+            @if (isEdit)
+            {
+                <input type="hidden" asp-for="Id" />
+            }
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Dni *</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresar nombre completo" required asp-for="Dni">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Nombres</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresar apellidos completos" required asp-for="Nombres">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="name" class="form-label">Apellidos</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresar nombre de restaurante" required asp-for="Apellidos">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Numero de teléfono</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Ingresar numero de teléfono" asp-for="Telefono">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Repartidor status</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <select class="form-control" asp-for="status">
+                            <option value="Disponible">Disponible</option>
+                            <option value="Ocupado">Ocupado</option>
+                            <option value="Offline">Offline</option>
+                        </select>
+             
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label for="imageUpload" class="form-label">Imagen</label>
+                    <div class="mt-2">
+                        <span class="text-muted small">Upload an image:</span>
+                        <input class="form-control" type="file" id="imageUpload" accept=".jpg,.jpeg,.png,.gif,.webp" asp-for="ImageUpload">
+                    </div>
+                </div>
+            </div>
+            @if (Model != null && Model.ImagePath != null)
+            {
+                <div class="mb-2">
+                    <p class="text-muted small">Imagen actual:</p>
+                    <img src="@Model.ImagePath" alt="Imagen actual" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" />
+                </div>
+            }
+            <input type="hidden" asp-for="ImagePath" />
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
